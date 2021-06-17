@@ -1,0 +1,51 @@
+HKCR
+{
+	SDOverlays.ReadOnly.1 = s 'ReadOnly Class'
+	{
+		CLSID = s '{0A97FBBB-10B7-4EF9-8E9C-E0076153B76E}'
+	}
+	SDOverlays.ReadOnly = s 'ReadOnly Class'
+	{
+		CLSID = s '{0A97FBBB-10B7-4EF9-8E9C-E0076153B76E}'
+		CurVer = s 'SDOverlays.ReadOnly.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {0A97FBBB-10B7-4EF9-8E9C-E0076153B76E} = s 'ReadOnly Class'
+		{
+			ProgID = s 'SDOverlays.ReadOnly.1'
+			VersionIndependentProgID = s 'SDOverlays.ReadOnly'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{BCC64F53-8186-4EEE-93D2-DD7C371188B2}'
+		}
+	}
+}
+
+HKLM
+{
+  NoRemove SOFTWARE
+  {
+    NoRemove Microsoft
+    {
+      NoRemove Windows
+      {
+        NoRemove CurrentVersion
+        {
+          NoRemove Explorer
+          {
+            NoRemove ShellIconOverlayIdentifiers
+            {
+              ForceRemove 00SD_ReadOnly = s '{0A97FBBB-10B7-4EF9-8E9C-E0076153B76E}'
+              {
+              }           
+            }
+          }
+        }
+      }
+    }
+  }
+}

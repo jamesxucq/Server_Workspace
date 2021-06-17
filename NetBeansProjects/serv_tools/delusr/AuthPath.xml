@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthPath Version="1.2.1">
+    <UserConfig>
+        <PoolSize>6</PoolSize>
+        <Location>/home/james/workspace/sd_users</Location>
+        <AuthHost>10.0.0.103:8089</AuthHost>
+        <Version>1.21.1</Version>
+    </UserConfig>
+    <AuthDB>
+        <Address Port="3306">10.0.0.103</Address>
+        <DBName>AuthDB</DBName>
+        <User Name="root" Password="123456"/>
+    </AuthDB>
+    <RuntimeLog DebugLevel="MAX">/var/log/sdserver/DelAdd.log</RuntimeLog>
+</AuthPath>

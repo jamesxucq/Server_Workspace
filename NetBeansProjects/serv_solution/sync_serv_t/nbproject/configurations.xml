@@ -1,0 +1,1137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles" displayName="头文件" projectFiles="true">
+      <logicalFolder name="f1" displayName="serv_common" projectFiles="true">
+        <logicalFolder name="f1" displayName="utility" projectFiles="true">
+          <itemPath>../serv_common/utility/action_hmap.h</itemPath>
+          <itemPath>../serv_common/utility/adler32.h</itemPath>
+          <itemPath>../serv_common/utility/base64.h</itemPath>
+          <itemPath>../serv_common/utility/cache_hmap.h</itemPath>
+          <itemPath>../serv_common/utility/hash_map.h</itemPath>
+          <itemPath>../serv_common/utility/hash_table.h</itemPath>
+          <itemPath>../serv_common/utility/md5.h</itemPath>
+          <itemPath>../serv_common/utility/sha1.h</itemPath>
+          <itemPath>../serv_common/utility/strptime.h</itemPath>
+          <itemPath>../serv_common/utility/tiny_pool.h</itemPath>
+          <itemPath>../serv_common/utility/utlist.h</itemPath>
+        </logicalFolder>
+        <itemPath>../serv_common/action.h</itemPath>
+        <itemPath>../serv_common/addr_list.h</itemPath>
+        <itemPath>../serv_common/anchor.h</itemPath>
+        <itemPath>../serv_common/anchor_cache.h</itemPath>
+        <itemPath>../serv_common/anchor_xml.h</itemPath>
+        <itemPath>../serv_common/auth_cache.h</itemPath>
+        <itemPath>../serv_common/auth_ctrl.h</itemPath>
+        <itemPath>../serv_common/auth_reply.h</itemPath>
+        <itemPath>../serv_common/auth_socks.h</itemPath>
+        <itemPath>E:/Server_Workspace/NetBeansProjects/serv_solution/serv_common/auth_stru.h</itemPath>
+        <itemPath>../serv_common/capacity.h</itemPath>
+        <itemPath>../serv_common/checksum.h</itemPath>
+        <itemPath>../serv_common/chks_cache.h</itemPath>
+        <itemPath>../serv_common/common_header.h</itemPath>
+        <itemPath>../serv_common/common_macro.h</itemPath>
+        <itemPath>../serv_common/daemonize.h</itemPath>
+        <itemPath>../serv_common/dires_xml.h</itemPath>
+        <itemPath>../serv_common/encoding.h</itemPath>
+        <itemPath>../serv_common/error_code.h</itemPath>
+        <itemPath>../serv_common/fasd_list.h</itemPath>
+        <itemPath>../serv_common/file_chks.h</itemPath>
+        <itemPath>../serv_common/file_utility.h</itemPath>
+        <itemPath>../serv_common/hash_table_ext.h</itemPath>
+        <itemPath>../serv_common/iattb_type.h</itemPath>
+        <itemPath>../serv_common/iattb_xml.h</itemPath>
+        <itemPath>../serv_common/linux_os.h</itemPath>
+        <itemPath>../serv_common/ope_list.h</itemPath>
+        <itemPath>../serv_common/query_xml.h</itemPath>
+        <itemPath>../serv_common/recu_directory.h</itemPath>
+        <itemPath>../serv_common/recu_utility.h</itemPath>
+        <itemPath>../serv_common/sdtproto.h</itemPath>
+        <itemPath>../serv_common/server_macro.h</itemPath>
+        <itemPath>../serv_common/status_xml.h</itemPath>
+        <itemPath>../serv_common/string_utility.h</itemPath>
+        <itemPath>../serv_common/text_value.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="third_party" projectFiles="true">
+        <logicalFolder name="f1" displayName="kyotocabinet" projectFiles="true">
+          <itemPath>../third_party/kyotocabinet/kccommon.h</itemPath>
+          <itemPath>../third_party/kyotocabinet/kccompare.h</itemPath>
+          <itemPath>../third_party/kyotocabinet/kccompress.h</itemPath>
+          <itemPath>../third_party/kyotocabinet/kcdb.h</itemPath>
+          <itemPath>../third_party/kyotocabinet/kcfile.h</itemPath>
+          <itemPath>../third_party/kyotocabinet/kchashdb.h</itemPath>
+          <itemPath>../third_party/kyotocabinet/kcmap.h</itemPath>
+          <itemPath>../third_party/kyotocabinet/kcplantdb.h</itemPath>
+          <itemPath>../third_party/kyotocabinet/kcregex.h</itemPath>
+          <itemPath>../third_party/kyotocabinet/kcthread.h</itemPath>
+          <itemPath>../third_party/kyotocabinet/kcutil.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="rivfs" projectFiles="true">
+          <itemPath>../third_party/rivfs/creat_river.h</itemPath>
+          <itemPath>../third_party/rivfs/riv_common.h</itemPath>
+          <itemPath>../third_party/rivfs/riv_md5.h</itemPath>
+          <itemPath>../third_party/rivfs/riv_sha1.h</itemPath>
+          <itemPath>../third_party/rivfs/river_cache.h</itemPath>
+          <itemPath>../third_party/rivfs/river_entry.h</itemPath>
+          <itemPath>../third_party/rivfs/river_utility.h</itemPath>
+          <itemPath>../third_party/rivfs/rivfs.h</itemPath>
+        </logicalFolder>
+        <itemPath>../third_party/access_log.h</itemPath>
+        <itemPath>../third_party/binary_logger.h</itemPath>
+        <itemPath>../third_party/common.h</itemPath>
+        <itemPath>../third_party/dmap64.h</itemPath>
+        <itemPath>../third_party/logger.h</itemPath>
+        <itemPath>../third_party/memory_utility.h</itemPath>
+        <itemPath>../third_party/pmap64.h</itemPath>
+        <itemPath>../third_party/third_party.h</itemPath>
+        <itemPath>../third_party/tiny_map.h</itemPath>
+      </logicalFolder>
+      <itemPath>auth_bzl.h</itemPath>
+      <itemPath>build_utility.h</itemPath>
+      <itemPath>chks_bzl.h</itemPath>
+      <itemPath>dseion.h</itemPath>
+      <itemPath>epoll_serv.h</itemPath>
+      <itemPath>evd_list.h</itemPath>
+      <itemPath>event.h</itemPath>
+      <itemPath>excep.h</itemPath>
+      <itemPath>finalize.h</itemPath>
+      <itemPath>gseion.h</itemPath>
+      <itemPath>hand_epoll.h</itemPath>
+      <itemPath>list_cache.h</itemPath>
+      <itemPath>listxml.h</itemPath>
+      <itemPath>match_utility.h</itemPath>
+      <itemPath>opera_bzl.h</itemPath>
+      <itemPath>options.h</itemPath>
+      <itemPath>parse_conf.h</itemPath>
+      <itemPath>process_cycle.h</itemPath>
+      <itemPath>sdtp_utility.h</itemPath>
+      <itemPath>session.h</itemPath>
+      <itemPath>speed_utility.h</itemPath>
+      <itemPath>sserv_bzl.h</itemPath>
+      <itemPath>sserv_object.h</itemPath>
+      <itemPath>sync_serv.h</itemPath>
+      <itemPath>value_layer.h</itemPath>
+      <itemPath>versi_utility.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles" displayName="源文件" projectFiles="true">
+      <logicalFolder name="f1" displayName="serv_common" projectFiles="true">
+        <logicalFolder name="f1" displayName="utility" projectFiles="true">
+          <itemPath>../serv_common/utility/action_hmap.c</itemPath>
+          <itemPath>../serv_common/utility/adler32.c</itemPath>
+          <itemPath>../serv_common/utility/base64.c</itemPath>
+          <itemPath>../serv_common/utility/cache_hmap.c</itemPath>
+          <itemPath>../serv_common/utility/hash_map.c</itemPath>
+          <itemPath>../serv_common/utility/hash_table.c</itemPath>
+          <itemPath>../serv_common/utility/md5.c</itemPath>
+          <itemPath>../serv_common/utility/sha1.c</itemPath>
+          <itemPath>../serv_common/utility/strptime.c</itemPath>
+          <itemPath>../serv_common/utility/tiny_pool.c</itemPath>
+        </logicalFolder>
+        <itemPath>../serv_common/action.c</itemPath>
+        <itemPath>../serv_common/addr_list.c</itemPath>
+        <itemPath>../serv_common/anchor.c</itemPath>
+        <itemPath>../serv_common/anchor_cache.c</itemPath>
+        <itemPath>../serv_common/anchor_xml.c</itemPath>
+        <itemPath>../serv_common/auth_cache.c</itemPath>
+        <itemPath>../serv_common/auth_ctrl.c</itemPath>
+        <itemPath>../serv_common/auth_reply.c</itemPath>
+        <itemPath>../serv_common/auth_socks.c</itemPath>
+        <itemPath>../serv_common/capacity.c</itemPath>
+        <itemPath>../serv_common/checksum.c</itemPath>
+        <itemPath>../serv_common/chks_cache.cpp</itemPath>
+        <itemPath>../serv_common/daemonize.c</itemPath>
+        <itemPath>../serv_common/dires_xml.c</itemPath>
+        <itemPath>../serv_common/encoding.c</itemPath>
+        <itemPath>../serv_common/fasd_list.c</itemPath>
+        <itemPath>../serv_common/file_chks.c</itemPath>
+        <itemPath>../serv_common/file_utility.c</itemPath>
+        <itemPath>../serv_common/hash_table_ext.c</itemPath>
+        <itemPath>../serv_common/iattb_xml.c</itemPath>
+        <itemPath>../serv_common/linux_os.c</itemPath>
+        <itemPath>../serv_common/ope_list.c</itemPath>
+        <itemPath>../serv_common/query_xml.c</itemPath>
+        <itemPath>../serv_common/recu_directory.c</itemPath>
+        <itemPath>../serv_common/recu_utility.c</itemPath>
+        <itemPath>../serv_common/sdtproto.c</itemPath>
+        <itemPath>../serv_common/status_xml.c</itemPath>
+        <itemPath>../serv_common/string_utility.c</itemPath>
+        <itemPath>../serv_common/text_value.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="third_party" projectFiles="true">
+        <logicalFolder name="f2" displayName="kyotocabinet" projectFiles="true">
+          <itemPath>../third_party/kyotocabinet/libkyotocabinet.a</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f1" displayName="rivfs" projectFiles="true">
+          <itemPath>../third_party/rivfs/creat_river.cpp</itemPath>
+          <itemPath>../third_party/rivfs/riv_md5.c</itemPath>
+          <itemPath>../third_party/rivfs/riv_sha1.c</itemPath>
+          <itemPath>../third_party/rivfs/river_cache.cpp</itemPath>
+          <itemPath>../third_party/rivfs/river_entry.cpp</itemPath>
+          <itemPath>../third_party/rivfs/river_utility.cpp</itemPath>
+          <itemPath>../third_party/rivfs/rivfs.cpp</itemPath>
+        </logicalFolder>
+        <itemPath>../third_party/access_log.c</itemPath>
+        <itemPath>../third_party/binary_logger.c</itemPath>
+        <itemPath>../third_party/dmap64.c</itemPath>
+        <itemPath>../third_party/logger.c</itemPath>
+        <itemPath>../third_party/memory_utility.c</itemPath>
+        <itemPath>../third_party/pmap64.c</itemPath>
+        <itemPath>../third_party/tiny_map.c</itemPath>
+      </logicalFolder>
+      <itemPath>auth_bzl.c</itemPath>
+      <itemPath>build_utility.c</itemPath>
+      <itemPath>chks_bzl.cpp</itemPath>
+      <itemPath>dseion.cpp</itemPath>
+      <itemPath>epoll_serv.cpp</itemPath>
+      <itemPath>evd_list.cpp</itemPath>
+      <itemPath>excep.cpp</itemPath>
+      <itemPath>gseion.cpp</itemPath>
+      <itemPath>hand_epoll.cpp</itemPath>
+      <itemPath>list_cache.c</itemPath>
+      <itemPath>listxml.c</itemPath>
+      <itemPath>match_utility.c</itemPath>
+      <itemPath>opera_bzl.c</itemPath>
+      <itemPath>options.c</itemPath>
+      <itemPath>parse_conf.c</itemPath>
+      <itemPath>process_cycle.cpp</itemPath>
+      <itemPath>sdtp_utility.cpp</itemPath>
+      <itemPath>session.cpp</itemPath>
+      <itemPath>speed_utility.c</itemPath>
+      <itemPath>sserv_bzl.cpp</itemPath>
+      <itemPath>sserv_object.cpp</itemPath>
+      <itemPath>sync_serv.cpp</itemPath>
+      <itemPath>value_layer.c</itemPath>
+      <itemPath>versi_utility.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles" displayName="资源文件" projectFiles="true">
+      <itemPath>sync_serv.xml</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="测试文件"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="重要文件"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>E:\Server_Workspace\NetBeansProjects\serv_solution\serv_common</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>../serv_common</pElem>
+            <pElem>../third_party</pElem>
+            <pElem>../third_party/kyotocabinet</pElem>
+            <pElem>/usr/include/mysql</pElem>
+          </incDir>
+          <commandLine>-Wall -D_SYNC_SERVER -D_DEBUG -D_LARGEFILE64_SOURCE -D_FILEOFFSET_BITS==64</commandLine>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>../serv_common</pElem>
+            <pElem>../third_party</pElem>
+            <pElem>../third_party/kyotocabinet</pElem>
+            <pElem>/usr/include/mysql</pElem>
+          </incDir>
+          <commandLine>-Wall -D_SYNC_SERVER -D_DEBUG -D_LARGEFILE64_SOURCE</commandLine>
+        </ccTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>../third_party/kyotocabinet</pElem>
+          </linkerAddLib>
+          <commandLine>-lxml2 -lkyotocabinet -lstdc++ -lz -lpthread -lm -lc -lrt -lmysqlclient -L/usr/lib64/mysql -ldl</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="../serv_common/action.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/action.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/addr_list.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/addr_list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/anchor.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/anchor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/anchor_cache.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/anchor_cache.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/anchor_xml.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/anchor_xml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/auth_cache.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/auth_cache.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/auth_ctrl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/auth_ctrl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/auth_reply.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/auth_reply.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/auth_socks.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/auth_socks.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/capacity.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/capacity.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/checksum.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/checksum.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/chks_cache.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../serv_common/chks_cache.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/common_header.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/common_macro.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/daemonize.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/daemonize.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/dires_xml.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/dires_xml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/encoding.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/encoding.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/error_code.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/fasd_list.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/fasd_list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/file_chks.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/file_chks.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/file_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/file_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/hash_table_ext.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/hash_table_ext.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/iattb_type.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/iattb_xml.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/iattb_xml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/linux_os.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/linux_os.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/ope_list.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/ope_list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/query_xml.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/query_xml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/recu_directory.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/recu_directory.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/recu_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/recu_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/sdtproto.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/sdtproto.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/server_macro.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/status_xml.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/status_xml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/string_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/string_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/text_value.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/text_value.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/action_hmap.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../serv_common/utility/action_hmap.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../serv_common/utility/adler32.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/adler32.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/base64.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/base64.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/cache_hmap.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../serv_common/utility/cache_hmap.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../serv_common/utility/hash_map.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/hash_map.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/hash_table.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../serv_common/utility/hash_table.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../serv_common/utility/md5.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/md5.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/sha1.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/sha1.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/strptime.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/strptime.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/tiny_pool.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/tiny_pool.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/utlist.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/access_log.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/access_log.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/binary_logger.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/binary_logger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/common.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/dmap64.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/dmap64.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/kyotocabinet/kccommon.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../third_party/kyotocabinet/kccompare.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../third_party/kyotocabinet/kccompress.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../third_party/kyotocabinet/kcdb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/kyotocabinet/kcfile.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../third_party/kyotocabinet/kchashdb.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../third_party/kyotocabinet/kcmap.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../third_party/kyotocabinet/kcplantdb.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../third_party/kyotocabinet/kcregex.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../third_party/kyotocabinet/kcthread.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../third_party/kyotocabinet/kcutil.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../third_party/kyotocabinet/libkyotocabinet.a"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../third_party/logger.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/logger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/memory_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/memory_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/pmap64.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/pmap64.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/creat_river.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/creat_river.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/riv_common.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/riv_md5.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/riv_md5.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/riv_sha1.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/riv_sha1.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/river_cache.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/river_cache.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/river_entry.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/river_entry.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/river_utility.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/river_utility.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/rivfs.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/rivfs.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/third_party.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/tiny_map.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/tiny_map.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="E:/Server_Workspace/NetBeansProjects/serv_solution/serv_common/auth_stru.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="auth_bzl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="auth_bzl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="build_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="build_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="chks_bzl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="chks_bzl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dseion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="dseion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="epoll_serv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="epoll_serv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="evd_list.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="evd_list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="event.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="excep.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="excep.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="finalize.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="gseion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="gseion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="hand_epoll.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="hand_epoll.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="list_cache.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="list_cache.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="listxml.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="listxml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="match_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="match_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="opera_bzl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="opera_bzl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="options.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="options.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="parse_conf.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="parse_conf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="process_cycle.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="process_cycle.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="sdtp_utility.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="sdtp_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="session.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="session.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="speed_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="speed_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="sserv_bzl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="sserv_bzl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="sserv_object.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="sserv_object.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="sync_serv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="sync_serv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="sync_serv.xml" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="value_layer.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="value_layer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="versi_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="versi_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="../serv_common/action.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/action.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/addr_list.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/addr_list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/anchor.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/anchor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/anchor_cache.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/anchor_cache.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/anchor_xml.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/anchor_xml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/auth_cache.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/auth_cache.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/auth_ctrl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/auth_ctrl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/auth_reply.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/auth_reply.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/auth_socks.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/auth_socks.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/capacity.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/capacity.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/checksum.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/checksum.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/chks_cache.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../serv_common/chks_cache.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/common_header.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/common_macro.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/daemonize.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/daemonize.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/dires_xml.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/dires_xml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/encoding.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/encoding.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/error_code.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/fasd_list.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/fasd_list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/file_chks.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/file_chks.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/file_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/file_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/hash_table_ext.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/hash_table_ext.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/iattb_type.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/iattb_xml.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/iattb_xml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/linux_os.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/linux_os.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/ope_list.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/ope_list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/query_xml.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/query_xml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/recu_directory.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/recu_directory.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/recu_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/recu_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/sdtproto.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/sdtproto.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/server_macro.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/status_xml.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/status_xml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/string_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/string_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/text_value.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/text_value.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/action_hmap.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../serv_common/utility/action_hmap.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../serv_common/utility/adler32.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/adler32.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/base64.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/base64.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/cache_hmap.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../serv_common/utility/cache_hmap.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../serv_common/utility/hash_map.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/hash_map.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/hash_table.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../serv_common/utility/hash_table.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../serv_common/utility/md5.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/md5.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/sha1.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/sha1.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/strptime.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/strptime.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/tiny_pool.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/tiny_pool.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/utlist.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/access_log.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/access_log.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/binary_logger.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/binary_logger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/common.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/dmap64.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/dmap64.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/kyotocabinet/kccommon.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../third_party/kyotocabinet/kccompare.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../third_party/kyotocabinet/kccompress.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../third_party/kyotocabinet/kcdb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/kyotocabinet/kcfile.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../third_party/kyotocabinet/kchashdb.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../third_party/kyotocabinet/kcmap.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../third_party/kyotocabinet/kcplantdb.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../third_party/kyotocabinet/kcregex.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../third_party/kyotocabinet/kcthread.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../third_party/kyotocabinet/kcutil.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../third_party/kyotocabinet/libkyotocabinet.a"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../third_party/logger.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/logger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/memory_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/memory_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/pmap64.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/pmap64.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/creat_river.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/creat_river.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/riv_common.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/riv_md5.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/riv_md5.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/riv_sha1.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/riv_sha1.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/river_cache.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/river_cache.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/river_entry.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/river_entry.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/river_utility.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/river_utility.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/rivfs.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../third_party/rivfs/rivfs.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/third_party.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/tiny_map.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/tiny_map.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="E:/Server_Workspace/NetBeansProjects/serv_solution/serv_common/auth_stru.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="auth_bzl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="auth_bzl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="build_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="build_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="chks_bzl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="chks_bzl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dseion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="dseion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="epoll_serv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="epoll_serv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="evd_list.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="evd_list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="event.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="excep.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="excep.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="finalize.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="gseion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="gseion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="hand_epoll.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="hand_epoll.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="list_cache.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="list_cache.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="listxml.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="listxml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="match_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="match_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="opera_bzl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="opera_bzl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="options.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="options.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="parse_conf.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="parse_conf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="process_cycle.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="process_cycle.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="sdtp_utility.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="sdtp_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="session.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="session.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="speed_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="speed_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="sserv_bzl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="sserv_bzl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="sserv_object.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="sserv_object.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="sync_serv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="sync_serv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="sync_serv.xml" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="value_layer.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="value_layer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="versi_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="versi_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

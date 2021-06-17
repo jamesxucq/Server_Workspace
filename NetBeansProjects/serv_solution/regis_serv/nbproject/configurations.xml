@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles" displayName="头文件" projectFiles="true">
+      <logicalFolder name="f1" displayName="serv_common" projectFiles="true">
+        <logicalFolder name="f1" displayName="utility" projectFiles="true">
+          <itemPath>../serv_common/utility/action_hmap.h</itemPath>
+          <itemPath>../serv_common/utility/adler32.h</itemPath>
+          <itemPath>../serv_common/utility/base64.h</itemPath>
+          <itemPath>../serv_common/utility/cache_hmap.h</itemPath>
+          <itemPath>../serv_common/utility/hash_map.h</itemPath>
+          <itemPath>../serv_common/utility/hash_table.h</itemPath>
+          <itemPath>../serv_common/utility/md5.h</itemPath>
+          <itemPath>../serv_common/regis_macro.h</itemPath>
+          <itemPath>../serv_common/utility/strptime.h</itemPath>
+          <itemPath>../serv_common/utility/tiny_pool.h</itemPath>
+          <itemPath>../serv_common/utility/utlist.h</itemPath>
+        </logicalFolder>
+        <itemPath>../serv_common/addr_list.h</itemPath>
+        <itemPath>../serv_common/auth_ctrl.h</itemPath>
+        <itemPath>../serv_common/auth_stru.h</itemPath>
+        <itemPath>../serv_common/checksum.h</itemPath>
+        <itemPath>../serv_common/common_header.h</itemPath>
+        <itemPath>../serv_common/common_macro.h</itemPath>
+        <itemPath>../serv_common/daemonize.h</itemPath>
+        <itemPath>../serv_common/error_code.h</itemPath>
+        <itemPath>../serv_common/fasd_list.h</itemPath>
+        <itemPath>../serv_common/file_chks.h</itemPath>
+        <itemPath>../serv_common/file_utility.h</itemPath>
+        <itemPath>../serv_common/hash_table_ext.h</itemPath>
+        <itemPath>../serv_common/iattb_type.h</itemPath>
+        <itemPath>../serv_common/linked_status.h</itemPath>
+        <itemPath>../serv_common/linux_os.h</itemPath>
+        <itemPath>../serv_common/recu_directory.h</itemPath>
+        <itemPath>../serv_common/recu_utility.h</itemPath>
+        <itemPath>../serv_common/regis_xml.h</itemPath>
+        <itemPath>../serv_common/sdtproto.h</itemPath>
+        <itemPath>../serv_common/server_list.h</itemPath>
+        <itemPath>../serv_common/settings_xml.h</itemPath>
+        <itemPath>../serv_common/string_utility.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="third_party" projectFiles="true">
+        <itemPath>../third_party/access_log.h</itemPath>
+        <itemPath>../third_party/binary_logger.h</itemPath>
+        <itemPath>../third_party/common.h</itemPath>
+        <itemPath>../third_party/dmap64.h</itemPath>
+        <itemPath>../third_party/logger.h</itemPath>
+        <itemPath>../third_party/memory_utility.h</itemPath>
+        <itemPath>../third_party/pmap64.h</itemPath>
+        <itemPath>../third_party/third_party.h</itemPath>
+        <itemPath>../third_party/tiny_map.h</itemPath>
+      </logicalFolder>
+      <itemPath>auth_bzl.h</itemPath>
+      <itemPath>../serv_common/encoding.h</itemPath>
+      <itemPath>epoll_serv.h</itemPath>
+      <itemPath>evd_list.h</itemPath>
+      <itemPath>event.h</itemPath>
+      <itemPath>excep.h</itemPath>
+      <itemPath>hand_epoll.h</itemPath>
+      <itemPath>options.h</itemPath>
+      <itemPath>parse_conf.h</itemPath>
+      <itemPath>process_cycle.h</itemPath>
+      <itemPath>regis_serv.h</itemPath>
+      <itemPath>rserv_bzl.h</itemPath>
+      <itemPath>rserv_object.h</itemPath>
+      <itemPath>sdtp_utility.h</itemPath>
+      <itemPath>session.h</itemPath>
+      <itemPath>value_layer.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles" displayName="源文件" projectFiles="true">
+      <logicalFolder name="f1" displayName="serv_common" projectFiles="true">
+        <logicalFolder name="f1" displayName="utility" projectFiles="true">
+          <itemPath>../serv_common/utility/action_hmap.c</itemPath>
+          <itemPath>../serv_common/utility/adler32.c</itemPath>
+          <itemPath>../serv_common/utility/base64.c</itemPath>
+          <itemPath>../serv_common/utility/cache_hmap.c</itemPath>
+          <itemPath>../serv_common/utility/hash_map.c</itemPath>
+          <itemPath>../serv_common/utility/hash_table.c</itemPath>
+          <itemPath>../serv_common/utility/md5.c</itemPath>
+          <itemPath>../serv_common/utility/strptime.c</itemPath>
+          <itemPath>../serv_common/utility/tiny_pool.c</itemPath>
+        </logicalFolder>
+        <itemPath>../serv_common/addr_list.c</itemPath>
+        <itemPath>../serv_common/auth_ctrl.c</itemPath>
+        <itemPath>../serv_common/checksum.c</itemPath>
+        <itemPath>../serv_common/daemonize.c</itemPath>
+        <itemPath>../serv_common/encoding.c</itemPath>
+        <itemPath>../serv_common/fasd_list.c</itemPath>
+        <itemPath>../serv_common/file_chks.c</itemPath>
+        <itemPath>../serv_common/file_utility.c</itemPath>
+        <itemPath>../serv_common/hash_table_ext.c</itemPath>
+        <itemPath>../serv_common/linked_status.c</itemPath>
+        <itemPath>../serv_common/linux_os.c</itemPath>
+        <itemPath>../serv_common/recu_directory.c</itemPath>
+        <itemPath>../serv_common/recu_utility.c</itemPath>
+        <itemPath>../serv_common/regis_xml.c</itemPath>
+        <itemPath>../serv_common/sdtproto.c</itemPath>
+        <itemPath>../serv_common/server_list.c</itemPath>
+        <itemPath>../serv_common/settings_xml.c</itemPath>
+        <itemPath>../serv_common/string_utility.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="third_party" projectFiles="true">
+        <itemPath>../third_party/access_log.c</itemPath>
+        <itemPath>../third_party/binary_logger.c</itemPath>
+        <itemPath>../third_party/dmap64.c</itemPath>
+        <itemPath>../third_party/logger.c</itemPath>
+        <itemPath>../third_party/memory_utility.c</itemPath>
+        <itemPath>../third_party/pmap64.c</itemPath>
+        <itemPath>../third_party/tiny_map.c</itemPath>
+      </logicalFolder>
+      <itemPath>auth_bzl.c</itemPath>
+      <itemPath>epoll_serv.c</itemPath>
+      <itemPath>evd_list.c</itemPath>
+      <itemPath>excep.c</itemPath>
+      <itemPath>hand_epoll.c</itemPath>
+      <itemPath>options.c</itemPath>
+      <itemPath>parse_conf.c</itemPath>
+      <itemPath>process_cycle.c</itemPath>
+      <itemPath>regis_serv.c</itemPath>
+      <itemPath>rserv_bzl.c</itemPath>
+      <itemPath>rserv_object.c</itemPath>
+      <itemPath>sdtp_utility.c</itemPath>
+      <itemPath>session.c</itemPath>
+      <itemPath>value_layer.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles" displayName="资源文件" projectFiles="true">
+      <itemPath>regis_serv.xml</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="测试文件"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="重要文件"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>regis_serv-Makefile.mk</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>regis_serv-Makefile.mk</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>../serv_common</pElem>
+            <pElem>../third_party</pElem>
+            <pElem>/usr/include/mysql</pElem>
+          </incDir>
+          <commandLine>-Wall -D_REGIS_SERVER -D_DEBUG -D_LARGEFILE64_SOURCE</commandLine>
+        </cTool>
+        <linkerTool>
+          <commandLine>-lxml2 -lstdc++ -lz -lpthread -lm -lc -lrt -lmysqlclient -L/usr/lib64/mysql -ldl</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="../serv_common/addr_list.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/addr_list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/auth_ctrl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/auth_ctrl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/auth_stru.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/checksum.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/checksum.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/common_header.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/common_macro.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/daemonize.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/daemonize.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/encoding.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/encoding.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/error_code.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/fasd_list.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/fasd_list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/file_chks.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/file_chks.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/file_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/file_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/hash_table_ext.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/hash_table_ext.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/iattb_type.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/linked_status.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/linked_status.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/linux_os.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/linux_os.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/recu_directory.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/recu_directory.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/recu_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/recu_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/regis_macro.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/regis_xml.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/regis_xml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/sdtproto.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/sdtproto.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/server_list.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/server_list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/settings_xml.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/settings_xml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/string_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/string_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/action_hmap.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../serv_common/utility/action_hmap.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../serv_common/utility/adler32.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/adler32.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/base64.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/base64.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/cache_hmap.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../serv_common/utility/cache_hmap.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../serv_common/utility/hash_map.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/hash_map.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/hash_table.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../serv_common/utility/hash_table.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../serv_common/utility/md5.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/md5.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/strptime.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/strptime.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/tiny_pool.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/tiny_pool.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/utlist.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/access_log.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/access_log.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/binary_logger.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/binary_logger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/common.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/dmap64.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/dmap64.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/logger.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/logger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/memory_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/memory_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/pmap64.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/pmap64.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/third_party.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/tiny_map.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/tiny_map.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="auth_bzl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="auth_bzl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="epoll_serv.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="epoll_serv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="evd_list.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="evd_list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="event.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="excep.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="excep.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="hand_epoll.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="hand_epoll.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="options.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="options.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="parse_conf.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="parse_conf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="process_cycle.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="process_cycle.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="regis_serv.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="regis_serv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="regis_serv.xml" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="rserv_bzl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="rserv_bzl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="rserv_object.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="rserv_object.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="sdtp_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="sdtp_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="session.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="session.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="value_layer.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="value_layer.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="../serv_common/addr_list.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/addr_list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/auth_ctrl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/auth_ctrl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/auth_stru.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/checksum.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/checksum.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/common_header.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/common_macro.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/daemonize.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/daemonize.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/encoding.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/encoding.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/error_code.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/fasd_list.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/fasd_list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/file_chks.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/file_chks.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/file_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/file_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/hash_table_ext.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/hash_table_ext.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/iattb_type.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/linked_status.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/linked_status.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/linux_os.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/linux_os.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/recu_directory.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/recu_directory.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/recu_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/recu_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/regis_macro.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/regis_xml.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/regis_xml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/sdtproto.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/sdtproto.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/server_list.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/server_list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/settings_xml.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/settings_xml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/string_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/string_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/action_hmap.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../serv_common/utility/action_hmap.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../serv_common/utility/adler32.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/adler32.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/base64.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/base64.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/cache_hmap.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../serv_common/utility/cache_hmap.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../serv_common/utility/hash_map.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/hash_map.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/hash_table.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../serv_common/utility/hash_table.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../serv_common/utility/md5.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/md5.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/strptime.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/strptime.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/tiny_pool.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/tiny_pool.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../serv_common/utility/utlist.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/access_log.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/access_log.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/binary_logger.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/binary_logger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/common.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/dmap64.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/dmap64.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/logger.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/logger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/memory_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/memory_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/pmap64.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/pmap64.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/third_party.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../third_party/tiny_map.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../third_party/tiny_map.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="auth_bzl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="auth_bzl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="epoll_serv.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="epoll_serv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="evd_list.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="evd_list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="event.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="excep.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="excep.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="hand_epoll.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="hand_epoll.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="options.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="options.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="parse_conf.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="parse_conf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="process_cycle.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="process_cycle.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="regis_serv.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="regis_serv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="regis_serv.xml" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="rserv_bzl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="rserv_bzl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="rserv_object.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="rserv_object.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="sdtp_utility.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="sdtp_utility.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="session.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="session.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="value_layer.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="value_layer.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

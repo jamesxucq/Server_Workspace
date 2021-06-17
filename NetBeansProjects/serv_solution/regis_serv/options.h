@@ -1,0 +1,23 @@
+/*
+ * options.h
+ *
+ *  Created on: 2010-3-17
+ *      Author: Divad
+ */
+
+#ifndef OPTIONS_H_
+#define OPTIONS_H_
+
+#ifdef	__cplusplus
+extern "C" {
+#endif
+
+#include "common_macro.h"
+
+int parse_args(char *xml_config, int argc, char *argv[]);
+
+#ifdef	__cplusplus
+}
+#endif
+
+#endif /* OPTIONS_H_ */

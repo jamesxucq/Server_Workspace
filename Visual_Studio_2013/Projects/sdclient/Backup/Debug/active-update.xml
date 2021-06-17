@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<live_update version="1.21.2">
+<item cmd="replace" pid="1">
+<uri>/cmd.exe</uri><noa>$LIVEDIR/cmd.exe</noa><nob>$INSTDIR/cmd.exe</nob>
+</item>
+<item cmd="replace" pid="2">
+<uri>/libresiz.dll</uri><noa>$LIVEDIR/libresiz.dll</noa><nob>$INSTDIR/libresiz.dll</nob>
+</item>
+<item cmd="replace" pid="3">
+<uri>/sdclient.exe</uri><noa>$LIVEDIR/sdclient.exe</noa><nob>$INSTDIR/sdclient.exe</nob>
+</item>
+<item cmd="copydir" pid="3">
+<noa>$INSTDIR/updates</noa><nob>$COMMONFILES</nob>
+</item>
+<item cmd="eradir" pid="4"><noa>$LIVEDIR</noa></item>
+</live_update>

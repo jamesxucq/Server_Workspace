@@ -1,0 +1,51 @@
+HKCR
+{
+	SDOverlays.Forbid.1 = s 'Forbid Class'
+	{
+		CLSID = s '{C7F27E92-CB43-4A23-B019-CE13DE2227FC}'
+	}
+	SDOverlays.Forbid = s 'Forbid Class'
+	{
+		CLSID = s '{C7F27E92-CB43-4A23-B019-CE13DE2227FC}'
+		CurVer = s 'SDOverlays.Forbid.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {C7F27E92-CB43-4A23-B019-CE13DE2227FC} = s 'Forbid Class'
+		{
+			ProgID = s 'SDOverlays.Forbid.1'
+			VersionIndependentProgID = s 'SDOverlays.Forbid'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{BCC64F53-8186-4EEE-93D2-DD7C371188B2}'
+		}
+	}
+}
+
+HKLM
+{
+  NoRemove SOFTWARE
+  {
+    NoRemove Microsoft
+    {
+      NoRemove Windows
+      {
+        NoRemove CurrentVersion
+        {
+          NoRemove Explorer
+          {
+            NoRemove ShellIconOverlayIdentifiers
+            {
+              ForceRemove 00SD_Forbid = s '{C7F27E92-CB43-4A23-B019-CE13DE2227FC}'
+              {
+              }           
+            }
+          }
+        }
+      }
+    }
+  }
+}

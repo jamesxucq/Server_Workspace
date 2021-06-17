@@ -1,0 +1,72 @@
+Linux版本为：
+[root@localhost ~]# cat /etc/centos-release
+CentOS Linux release 7.1.1503 (Core)
+数据库版本：
+Server version: 5.6.22-enterprise-commercial-advanced
+安装方式：
+rpm方式安装
+-----------------------------------------------------------------------------
+步骤：
+1、下载数据库zip包解压得到如下文件：
+MySQL-client-advanced-5.6.22-1.el7.x86_64.rpm 
+MySQL-devel-advanced-5.6.22-1.el7.x86_64.rpm 
+MySQL-embedded-advanced-5.6.22-1.el7.x86_64.rpm
+MySQL-server-advanced-5.6.22-1.el7.x86_64.rpm
+MySQL-shared-advanced-5.6.22-1.el7.x86_64.rpm
+MySQL-shared-compat-advanced-5.6.22-1.el7.x86_64.rpm
+MySQL-test-advanced-5.6.22-1.el7.x86_64.rpm
+2、删除centOs中默认的mariaDB
+# rpm -qa | grep mariadb
+# rpm -e XXX
+3、安装上面1的rpm包，可以选择性安装
+# rpm -ivh xxx.rp,
+4、开启mysql服务
+5、禁用系统默认开启的selinux服务
+# vim /etc/selix/config
+更改SELINUX=disabled（默认为enforcing）
+这一步可以避免出现不可获得进程号PID的时候检查这一步是否操作，操作完是否完成reboot
+6、登陆mysql
+# mysql
+报错：ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+原因：Mysql5.6 版本以后会为默认的root用户设置密码，因此需要进入mysql修改密码
+解决：
+  step1: # service mysql stop
+step2: # mysqld_safe --user=mysql --skip-grant-tables --skip-networking &
+解释：--skip-grant-tables 不启动grant-tables(授权表),跳过权限控制
+       --skip-networking  跳过TCP/IP协议，只在本机访问
+  step3: # mysql -u root mysql，在进入的数据库子命令提示中输入：
+select Host, User, Password,password_expired
+    -> from user
+    -> where user='root' and host='root' or host='localhost';
++-----------+------+-------------------------------------------+------------------+
+| Host      | User | Password                                  | password_expired |
++-----------+------+-------------------------------------------+------------------+
+| localhost | root | *4034014487941C5EF4BD883C6F703FB1AA20446F | Y                |
++-----------+------+-------------------------------------------+------------------+
+step4:修改数据库密码
+update user set
+-> password=PASSWORD('你的密码')
+
+    -> where user='root' and host='root' or host='localhost';  
+然后输入： flush privileges授予刚才操作权限
+
+至此全部结束
+
+//////////////////////////////////////////////////
+5.7 password=>authentication_string
+
+//////////////////////////////////////////////////
+其实想要重置 5.7 的密码很简单，就一层窗户纸：
+1、修改 /etc/my.cnf，在 [mysqld] 小节下添加一行：skip-grant-tables=1
+这一行配置让 mysqld 启动时不对密码进行验证
+2、重启 mysqld 服务：systemctl restart mysqld
+3、使用 root 用户登录到 mysql：mysql -u root 
+4、切换到mysql数据库，更新 user 表：
+update user set authentication_string = password('root'), password_expired = 'N', password_last_changed = now() where user = 'root';
+在之前的版本中，密码字段的字段名是 password，5.7版本改为了 authentication_string
+5、退出 mysql，编辑 /etc/my.cnf 文件，删除 skip-grant-tables=1 的内容
+6、重启 mysqld 服务，再用新密码登录即可
+
+另外，MySQL 5.7 在初始安装后（CentOS7 操作系统）会生成随机初始密码，并在 /var/log/mysqld.log 中有记录，可以通过 cat 命令查看，找 password 关键字
+
+找到密码后，在本机以初始密码登录，并且（也只能）通过 alter user 'root'@'localhost' identified by 'root' 命令，修改 root 用户的密码为 root，然后退出，重新以root用户和刚设置的密码进行登录即可。

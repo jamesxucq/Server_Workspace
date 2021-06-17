@@ -1,0 +1,1119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp; c; cc; cxx; def; odl; idl; hpj; bat; asm; asmx</Extensions>
+    </Filter>
+    <Filter Include="源文件\clientcom">
+      <UniqueIdentifier>{dfaa7895-f0ed-45fd-96a0-0f355a0a7fa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\clientcom\utility">
+      <UniqueIdentifier>{4175a5c1-1adb-4f1d-8b5e-ebcddc7e9de8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\clientcom\third party">
+      <UniqueIdentifier>{1a2010df-7ce1-4b1c-b075-f7740a06c92c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\clientcom\third party\RiverFS">
+      <UniqueIdentifier>{dd0e8d4b-7c8a-4f01-80ab-f95fc015f589}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h; hpp; hxx; hm; inl; inc; xsd</Extensions>
+    </Filter>
+    <Filter Include="头文件\clientcom">
+      <UniqueIdentifier>{9a18f8c9-ef94-4fb4-8415-3702e02ecccd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\clientcom\utility">
+      <UniqueIdentifier>{d9fec53c-5fce-4c9d-b359-a1bffaf0a8ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\third party">
+      <UniqueIdentifier>{eecdf980-9bd2-4ba5-a9c2-b252cb977dbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\third party\RiverFS">
+      <UniqueIdentifier>{3cc4db5a-f858-47ee-8121-d60a5ba3c3f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\third party\dbz">
+      <UniqueIdentifier>{89503a84-9675-4732-90be-d8c2569f9deb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc; ico; cur; bmp; dlg; rc2; rct; bin; rgs; gif; jpg; jpeg; jpe; resx; tiff; tif; png; wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AboutDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AddPasswordDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AdvancedDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AnchorBzl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ApplicaBzl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BandwidthDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BuildTasksBzl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangePasswordDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildrenDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChksAddi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\ConfigurationBzl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugPrinter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DowndDiresDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ExceptAction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ExecuteTransmitBzl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ExecuteUtility.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FastUtility.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FinishUtility.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneralDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HandleTasksBzl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="KeepAlive.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ListUtility.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LkAiUtili.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalBzl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalObj.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LockAnchor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LockedAction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MountVolumeBzl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveUserspaceBzl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveUserspaceDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeUtility.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OperaExclus.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionsDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ParseLkAi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PoolResizeBzl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PrepaCache.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ProduceObj.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ProxiesDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\ResVector.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sdclient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sdTrayIcon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SecurityDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectiveBzl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectiveDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SHAHTable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ShellLinkBzl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TRANSObject.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TRANSThread.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TRANSWorker.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ValidateDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VerifyTasksBzl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VerifyUtility.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WatcherBzl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\ActionHandler.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\ActionUtility.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\AdvaTView.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\Anchor.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\AnchorCache.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\AnchorXml.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\BuildHTable.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\BuildUtility.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\Checksum.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\DirectSockets.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\DiresVec.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\DiresXml.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\Encoding.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\ErrPrint.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\FastActXml.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\FileChks.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\FileConfli.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\FileForbid.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\FilesVec.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\FileUtility.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\ListVObj.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\logger_ansi.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\MatchUtility.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\NTFSLibrary.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\ParseConfig.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\Privilege.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\ProxyConnect.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\ProxySockets.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\QueryXml.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\RecursiveUtility.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\RegistXml.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\ReplyComand.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\ReplyHandler.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\ReplySeionBzl.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\SDTProtocol.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\SDTPUtility.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\Session.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\SettingsXml.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ClientCom\ShellLinker.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\ShellUtility.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\SlowAttXml.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\StringUtility.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\TaskListObj.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\TasksVec.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\TRANSCache.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\TRANSHandler.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\TRANSSeionBzl.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\TRANSSockets.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\TVUtility.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\ValueLayer.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\VolumeUtility.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\utility\adler32.cpp">
+      <Filter>源文件\clientcom\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\utility\base64.cpp">
+      <Filter>源文件\clientcom\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\utility\hash_func.cpp">
+      <Filter>源文件\clientcom\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\utility\hash_table.cpp">
+      <Filter>源文件\clientcom\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\utility\md5.cpp">
+      <Filter>源文件\clientcom\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\utility\queue.cpp">
+      <Filter>源文件\clientcom\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\utility\sha1.cpp">
+      <Filter>源文件\clientcom\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\utility\strptime.cpp">
+      <Filter>源文件\clientcom\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\utility\tiny_pool.cpp">
+      <Filter>源文件\clientcom\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\utility\ulog.cpp">
+      <Filter>源文件\clientcom\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\BtnST.cpp">
+      <Filter>源文件\clientcom\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\DialogCode.cpp">
+      <Filter>源文件\clientcom\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\DirectoryChanges.cpp">
+      <Filter>源文件\clientcom\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\DirectoryHandler.cpp">
+      <Filter>源文件\clientcom\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\DiskUtility.cpp">
+      <Filter>源文件\clientcom\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\FileDisk.cpp">
+      <Filter>源文件\clientcom\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\FolderDialog.cpp">
+      <Filter>源文件\clientcom\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\InstallService.cpp">
+      <Filter>源文件\clientcom\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\LoadDriver.cpp">
+      <Filter>源文件\clientcom\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\Logger.cpp">
+      <Filter>源文件\clientcom\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\Markup.cpp">
+      <Filter>源文件\clientcom\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\memory_utility.cpp">
+      <Filter>源文件\clientcom\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\Subclass.cpp">
+      <Filter>源文件\clientcom\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\SystemCall.cpp">
+      <Filter>源文件\clientcom\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\tiny_map.cpp">
+      <Filter>源文件\clientcom\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\tiny_map64.cpp">
+      <Filter>源文件\clientcom\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\TrayIcon.cpp">
+      <Filter>源文件\clientcom\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\BinaryLogger.cpp">
+      <Filter>源文件\clientcom\third party\RiverFS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\RiverFS\ChksList.cpp">
+      <Filter>源文件\clientcom\third party\RiverFS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\RiverFS\ChksUtility.cpp">
+      <Filter>源文件\clientcom\third party\RiverFS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\RiverFS\CommonUtility.cpp">
+      <Filter>源文件\clientcom\third party\RiverFS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\RiverFS\CreatRiver.cpp">
+      <Filter>源文件\clientcom\third party\RiverFS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\RiverFS\FilesRiver.cpp">
+      <Filter>源文件\clientcom\third party\RiverFS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\RiverFS\FolderUtility.cpp">
+      <Filter>源文件\clientcom\third party\RiverFS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\RiverFS\INodeUtility.cpp">
+      <Filter>源文件\clientcom\third party\RiverFS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\RiverFS\md5.cpp">
+      <Filter>源文件\clientcom\third party\RiverFS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\RiverFS\RiverFolder.cpp">
+      <Filter>源文件\clientcom\third party\RiverFS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\RiverFS\RiverFS.cpp">
+      <Filter>源文件\clientcom\third party\RiverFS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\RiverFS\RiverUtility.cpp">
+      <Filter>源文件\clientcom\third party\RiverFS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\RiverFS\sha1.cpp">
+      <Filter>源文件\clientcom\third party\RiverFS</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AddPasswordDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AdvancedDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AnchorBzl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ApplicaBzl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BandwidthDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BuildTasksBzl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangePasswordDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildrenDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChksAddi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugPrinter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DowndDiresDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ExceptAction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ExecuteTransmitBzl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ExecuteUtility.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FastUtility.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FinishUtility.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneralDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HandleTasksBzl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KeepAlive.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ListUtility.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LkAiUtili.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LocalBzl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LocalObj.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LockAnchor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LockedAction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MountVolumeBzl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveUserspaceBzl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveUserspaceDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeUtility.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OperaExclus.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionsDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ParseLkAi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PoolResizeBzl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PrepaCache.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProduceObj.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProxiesDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sdclient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sdTrayIcon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SecurityDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectiveBzl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectiveDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SHAHTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ShellLinkBzl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ShellUtility.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TasksVec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TRANSObject.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TRANSThread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TRANSWorker.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ValidateDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VerifyTasksBzl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VerifyUtility.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WatcherBzl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\ActionHandler.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\ActionUtility.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\AdvaTView.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\Anchor.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\AnchorCache.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\AnchorXml.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\BuildHTable.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\BuildUtility.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\Checksum.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\client_macro.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\clientcom.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\common_macro.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\ConfigurationBzl.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\DirectSockets.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\DiresVec.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\DiresXml.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\ErrorCode.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\ErrPrint.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\FastActXml.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\FileChks.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\FileConfli.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\FileForbid.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\FilesVec.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\FileUtility.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\iattb_type.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\ListVObj.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\logger_ansi.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\MatchUtility.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\NTFSLibrary.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\ParseConfig.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\Privilege.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\ProxyConnect.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\ProxySockets.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\QueryXml.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\RecursiveUtility.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\RegistXml.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\ReplyComand.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\ReplyHandler.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\ReplySessionBzl.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\ResVector.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\SDTProtocol.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\SDTPUtility.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\Session.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\SettingsXml.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ClientCom\ShellInterface.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ClientCom\ShellLinker.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\ShellUtility.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\SlowAttXml.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\StringUtility.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\TaskListObj.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\TasksVec.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\TRANSCache.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\TRANSHandler.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\TRANSSessionBzl.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\TRANSSockets.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\TVUtility.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\ValueLayer.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\VolumeUtility.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\utility\adler32.h">
+      <Filter>头文件\clientcom\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\utility\base64.h">
+      <Filter>头文件\clientcom\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\utility\hash_func.h">
+      <Filter>头文件\clientcom\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\utility\hash_table.h">
+      <Filter>头文件\clientcom\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\utility\md5.h">
+      <Filter>头文件\clientcom\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\utility\queue.h">
+      <Filter>头文件\clientcom\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\utility\sha1.h">
+      <Filter>头文件\clientcom\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\utility\strptime.h">
+      <Filter>头文件\clientcom\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\utility\tiny_pool.h">
+      <Filter>头文件\clientcom\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\utility\ulog.h">
+      <Filter>头文件\clientcom\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\BinaryLogger.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\BtnST.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\DialogCode.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\DirectoryChanges.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\DirectoryHandler.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\DiskUtility.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\FileDisk.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\fmifs.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\FolderDialog.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\InstallService.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\LoadDriver.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\Logger.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\Markup.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\memory_utility.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\Subclass.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\SystemCall.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\third_party.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\tiny_map.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\tiny_map64.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\TrayIcon.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\RiverFS\ChksList.h">
+      <Filter>头文件\third party\RiverFS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\RiverFS\ChksUtility.h">
+      <Filter>头文件\third party\RiverFS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\RiverFS\CommonUtility.h">
+      <Filter>头文件\third party\RiverFS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\RiverFS\CreatRiver.h">
+      <Filter>头文件\third party\RiverFS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\RiverFS\FilesRiver.h">
+      <Filter>头文件\third party\RiverFS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\RiverFS\FolderUtility.h">
+      <Filter>头文件\third party\RiverFS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\RiverFS\INodeUtility.h">
+      <Filter>头文件\third party\RiverFS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\RiverFS\md5.h">
+      <Filter>头文件\third party\RiverFS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\RiverFS\RiverFolder.h">
+      <Filter>头文件\third party\RiverFS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\RiverFS\RiverFS.h">
+      <Filter>头文件\third party\RiverFS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\RiverFS\RiverUtility.h">
+      <Filter>头文件\third party\RiverFS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\RiverFS\sha1.h">
+      <Filter>头文件\third party\RiverFS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\dbz\kccommon.h">
+      <Filter>头文件\third party\dbz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\dbz\kccompare.h">
+      <Filter>头文件\third party\dbz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\dbz\kccompress.h">
+      <Filter>头文件\third party\dbz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\dbz\kcdb.h">
+      <Filter>头文件\third party\dbz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\dbz\kcfile.h">
+      <Filter>头文件\third party\dbz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\dbz\kchashdb.h">
+      <Filter>头文件\third party\dbz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\dbz\kcmap.h">
+      <Filter>头文件\third party\dbz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\dbz\kcplantdb.h">
+      <Filter>头文件\third party\dbz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\dbz\kcregex.h">
+      <Filter>头文件\third party\dbz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\dbz\kcthread.h">
+      <Filter>头文件\third party\dbz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\dbz\kcutil.h">
+      <Filter>头文件\third party\dbz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\dbz\stdint.h">
+      <Filter>头文件\third party\dbz</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bm_background.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_checkstate.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_connect.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_fabout.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_faccount.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_fadvanced.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_fbandwidth.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_fgeneral.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_folderlist.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_fproxies.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_fsecurity.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_nabout.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_naccount.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_nadvanced.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_nbandwidth.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_ngeneral.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_nproxies.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_nsecurity.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_paused.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_running.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_sabout.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_saccount.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_sadvanced.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_sbandwidth.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_sgeneral.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_sproxies.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bm_ssecurity.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\normal.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\paused.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\sdclient.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\syncing_first.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\syncing_second.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\syncok.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="sdclient.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\sdclient.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

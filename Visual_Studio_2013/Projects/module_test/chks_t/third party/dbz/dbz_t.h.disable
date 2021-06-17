@@ -1,0 +1,38 @@
+#ifndef _DBZ_H                     // duplication check
+#define _DBZ_H
+
+namespace kyotocabinet
+{
+};
+
+class TreeDB
+{
+public:
+    enum OpenMode {
+        OREADER = 1 << 0,                    ///< open as a reader
+        OWRITER = 1 << 1,                    ///< open as a writer
+        OCREATE = 1 << 2,                    ///< writer creating
+        OTRUNCATE = 1 << 3,                  ///< writer truncating
+        ONOLOCK = 1 << 4,                    ///< open without locking
+        OTRYLOCK = 1 << 5                    ///< lock without blocking
+    };
+public:
+    inline bool open(const char *path, unsigned int mode = OWRITER | OCREATE) {
+        return true;
+    }
+    inline bool close() {
+        return true;
+    }
+    inline int get(const char *key, unsigned int key_len, char *value, unsigned int val_len) {
+        return 0;
+    }
+    inline bool set(const char *key, unsigned int key_len, char *value, unsigned int val_len) {
+        return true;
+    }
+    inline bool remove(const char *key, unsigned int key_len) {
+        return true;
+    }
+};
+
+
+#endif                                   // duplication check

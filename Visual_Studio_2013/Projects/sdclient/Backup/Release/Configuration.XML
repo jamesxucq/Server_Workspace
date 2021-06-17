@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SyncAgent Version="1.21.1">
+<ServParam>
+<RegistConfig Address="10.0.0.103" Port="8080"/>
+<UpdateServer Address="10.0.0.105" Port="80"/>
+</ServParam>
+<ClientConfig>
+<UserParam>
+<UserName>xujie@163.com</UserName>
+<Password Salt="vaXs8QcU44QaW4Er">dmFYczhRY1U0NFFhVzRFcjEyMzQ1NnZhWHM4UWNVNDRRYVc0RXI=</Password>
+</UserParam>
+<UserSpace>
+<Location>D:\SDUserSpace</Location>
+<UserPool Length="6">~\UserPool.sdi</UserPool>
+<FileForbid>~\FileForbid.XML</FileForbid>
+<FileConflict/>
+<Anchor Index="~\anchor_inde.ndx" Data="~\anchor_data.acd"/>
+<DriveLetter>G:</DriveLetter>
+</UserSpace>
+<System>
+<LocalIdenti>PC-201410261749</LocalIdenti>
+<AccountLinked>true</AccountLinked>
+<AutoRun>true</AutoRun>
+<ShowBalloonTip>false</ShowBalloonTip>
+<AutoUpdate>query</AutoUpdate>
+<Protected Enable="false">
+<Password Salt="pt6ZBNo9umwuPcnO"/>
+</Protected>
+<ForceCtrl>false</ForceCtrl>
+</System>
+</ClientConfig>
+<NetworkConfig>
+<NetworkRate>
+<Download Limit="false" Rate="321"/>
+<Upload Limit="false" Rate="321"/>
+</NetworkRate>
+<Proxies Enable="false">
+<Type>HTTP</Type>
+<Address Port="10">10.0.0.103</Address>
+<ProxyAuth Enable="false">
+<UserName/>
+<Password Salt=""/>
+</ProxyAuth>
+</Proxies>
+</NetworkConfig>
+<LogConfig Logfile="~\syncdisk.log" DebugLevel="MAX"/>
+<Display>
+<SystemLink>
+<ForgetPassword>http://www.sina.com.cn</ForgetPassword>
+<RegistUser>http://www.163.com</RegistUser>
+<ChangePassword>http://www.sohu.com</ChangePassword>
+<CompanyLink>http://www.pushan.com</CompanyLink>
+</SystemLink>
+</Display>
+</SyncAgent>

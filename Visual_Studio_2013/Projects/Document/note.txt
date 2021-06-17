@@ -1,0 +1,75 @@
+方案4吧，结构简单，成本低，最主要是对自然景色破坏小
+
+98MB
+u/run time:11985
+d/run time:151906
+
+ A temporary password is generated for root@localhost: dv(ldllHK9i/
+A temporary password is generated for root@localhost: stMOf*./8!sw
+A temporary password is generated for root@localhost: !q10mEhotwf1
+ A temporary password is generated for root@localhost: gx;Co!j,0QkU
+ A temporary password is generated for root@localhost: LdHiy9wxOd.f
+A temporary password is generated for root@localhost: Y,A.o9f#ekIo
+
+amy winehouse
+许杰
+男
+软件行业
+本科
+左右
+聪慧
+
+95             1              4               0					950
+95 SP1         1              4               0					>950 && <=1080
+95 OSR2        1              4             <10					>1080
+98             1              4              10					1998
+98 SP1         1              4              10					>1998 && <2183
+98 SE          1              4              10					>=2183
+ME             1              4              90					3000
+
+NT 3.51        2              3              51					1057
+NT 4           2              4               0					1381
+2000           2              5               0					2195
+XP             2              5               1					2600
+XP 64-Bit	   2			  5				  2										(OSVERSIONINFOEX.wProductType == VER_NT_WORKSTATION) && (SYSTEM_INFO.wProcessorArchitecture==PROCESSOR_ARCHITECTURE_AMD64)
+2003           2              5               2					3790				GetSystemMetrics(SM_SERVERR2) == 0
+Home Server	   2			  5				  2										OSVERSIONINFOEX.wSuiteMask & VER_SUITE_WH_SERVER
+2003 R2        2              5               2										GetSystemMetrics(SM_SERVERR2) != 0
+Vista          2              6               0										VER_NT_WORKSTATION
+2008           2              6               0										VER_NT_SERVER
+2008 R2        2              6               1										VER_NT_SERVER
+Win7           2              6               1										VER_NT_WORKSTATION
+2012           2              6               2										VER_NT_SERVER
+Win8           2              6               2										VER_NT_WORKSTATION
+2012 R2        2              6               3*									VER_NT_SERVER
+Win8.1         2              6               3*									VER_NT_WORKSTATION
+2016           2              10              0*									VER_NT_SERVER
+Win10          2              10              0*									VER_NT_WORKSTATION
+
+#define _WIN_NONE_			0x00000000
+#define _WIN_95_			0x00010400
+#define _WIN_95_SP1			0x00010400
+#define _WIN_95_OSR2_		0x00010409
+#define _WIN_98_			0x00010410
+#define _WIN_98_SP1			0x00010410
+#define _WIN_98_SE_			0x00010410
+#define _WIN_ME_			0x00010490
+
+#define _WIN_NT3_51_		0x00020351
+#define _WIN_NT4_			0x00020400
+#define _WIN_2K_			0x00020500
+#define _WIN_XP_			0x00020501
+#define _WIN_XP_64_			0x00020502
+#define _WIN_2003_			0x00020502
+#define _WIN_Home_Server_	0x00020502
+#define _WIN_2003_R2_		0x00020502
+#define _WIN_VISTA_			0x00020600
+#define _WIN_2008_			0x00020600
+#define _WIN_2008_R2_		0x00020601
+#define _WIN_7_				0x00020601
+#define _WIN_2012_			0x00020602
+#define _WIN_8_				0x00020602
+#define _WIN_2012_R2_		0x00020603
+#define _WIN_8_1_			0x00020603
+#define _WIN_2016_			0x00021000
+#define _WIN_TEN_			0x00021000

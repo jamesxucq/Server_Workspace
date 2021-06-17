@@ -1,0 +1,51 @@
+HKCR
+{
+	SDOverlays.Syncing.1 = s 'Syncing Class'
+	{
+		CLSID = s '{0EF9A413-9E51-47A9-8E37-07221B57EB6B}'
+	}
+	SDOverlays.Syncing = s 'Syncing Class'
+	{
+		CLSID = s '{0EF9A413-9E51-47A9-8E37-07221B57EB6B}'
+		CurVer = s 'SDOverlays.Syncing.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {0EF9A413-9E51-47A9-8E37-07221B57EB6B} = s 'Syncing Class'
+		{
+			ProgID = s 'SDOverlays.Syncing.1'
+			VersionIndependentProgID = s 'SDOverlays.Syncing'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{BCC64F53-8186-4EEE-93D2-DD7C371188B2}'
+		}
+	}
+}
+
+HKLM
+{
+  NoRemove SOFTWARE
+  {
+    NoRemove Microsoft
+    {
+      NoRemove Windows
+      {
+        NoRemove CurrentVersion
+        {
+          NoRemove Explorer
+          {
+            NoRemove ShellIconOverlayIdentifiers
+            {
+              ForceRemove 00SD_Syncing = s '{0EF9A413-9E51-47A9-8E37-07221B57EB6B}'
+              {
+              }           
+            }
+          }
+        }
+      }
+    }
+  }
+}

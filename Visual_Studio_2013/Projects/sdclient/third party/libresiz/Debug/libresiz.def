@@ -1,0 +1,4 @@
+LIBRARY libresiz.dll
+EXPORTS
+ntfsinfo                	@1
+ntfsresiz               	@2

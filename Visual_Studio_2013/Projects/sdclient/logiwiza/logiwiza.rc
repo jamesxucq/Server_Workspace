@@ -1,0 +1,322 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\logiwiza.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\logiwiza.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_WIZARD_DLG DIALOGEX 0, 0, 262, 188
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Volume Wizard"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         1060,IDC_BITMAP_WIZARD,"Static",SS_BITMAP,0,0,93,155
+    LTEXT           "",IDC_CHILDREN_POS,94,0,168,163
+    LTEXT           "",IDC_BUTTON_POS,137,164,124,15
+END
+
+IDD_LOGIN_PAGE_DLG DIALOGEX 0, 0, 195, 170
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_SERVADDR_EDT,52,24,119,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_USERNAME_EDT,52,43,80,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD_EDT,52,62,80,14,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "<a>忘记了密码?</a>",IDC_FORGETPWD_SYSLINK,"SysLink",WS_TABSTOP,88,80,46,11
+    EDITTEXT        IDC_LOCALIDENTI_EDT,52,97,119,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "设置代理",IDC_PROXY_BTN,124,128,48,12
+    CONTROL         "<a>新建一个用户</a>",IDC_REGISTUSR_SYSLINK,"SysLink",WS_TABSTOP,124,143,49,12
+    LTEXT           "登陆同步网盘:",IDC_STATIC,6,10,52,8
+    RTEXT           "服务器:",IDC_STATIC,19,28,28,8
+    RTEXT           "用户:",IDC_STATIC,27,47,20,8
+    RTEXT           "密码:",IDC_STATIC,27,66,20,8
+    RTEXT           "计算机名:",IDC_STATIC,10,100,36,8
+    LTEXT           "e.g. Drew`s Laptop",IDC_STATIC,11,114,64,8
+    LTEXT           "",IDC_LOGIN_STAT_STC,128,161,50,8
+END
+
+IDD_FORMAT_PAGE_DLG DIALOGEX 0, 0, 195, 170
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "创建本地空间:",IDC_STATIC,6,10,52,8
+    CONTROL         "",IDC_PROGRESS_BAR,"msctls_progress32",WS_BORDER,13,96,165,13
+    LTEXT           "进度:",IDC_STATIC,10,83,20,8
+    GROUPBOX        "信息",IDC_STATIC,13,22,168,52
+    RTEXT           "盘符:",IDC_STATIC,39,31,20,8
+    RTEXT           "磁盘标签:",IDC_STATIC,23,44,36,8
+    RTEXT           "本地目录:",IDC_STATIC,23,58,36,8
+    LTEXT           "静态",IDC_DRIVE_STC,67,31,107,8
+    LTEXT           "静态",IDC_LABEL_STC,67,44,109,8
+    LTEXT           "静态",IDC_LOCATION_STC,67,58,110,8
+    LTEXT           "",IDC_FORMAT_STAT_STC,124,161,71,8
+END
+
+IDD_DISKSETTING_PAGE_DLG DIALOGEX 0, 0, 195, 170
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_LOCATION_EDT,26,29,152,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "选择目录",IDC_PATH_SELECT_BTN,137,49,41,14
+    LTEXT           "设置本地盘:",IDC_STATIC,10,6,44,8
+    LTEXT           "位置:",IDC_STATIC,26,18,20,8
+    LTEXT           "",IDC_ATTENTION_STC,26,113,142,26
+    GROUPBOX        "说明:",IDC_STATIC,13,102,165,40
+    LTEXT           "此目录下已经有用户数据,\n    是否选择其他目录.",IDC_CHKSPACE_TEXT_STC,48,77,97,18
+    GROUPBOX        "提示:",IDC_CHKSPACE_PROMPT_STC,13,66,165,33
+END
+
+IDD_PROXIES_DLG DIALOGEX 0, 0, 220, 138
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Proxies"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "不设置代理",IDC_NOPROXY_RDO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,8,12,56,10
+    CONTROL         "自动设置代理",IDC_AUTOPROXY_RDO,"Button",BS_AUTORADIOBUTTON,8,23,64,10
+    CONTROL         "手动设置代理",IDC_MANUALPROXY_RDO,"Button",BS_AUTORADIOBUTTON,8,34,64,10
+    COMBOBOX        IDC_TYPE_CBO,41,45,48,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    EDITTEXT        IDC_SERV_EDT,41,61,100,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PORT_EDT,163,61,40,14,ES_AUTOHSCROLL
+    CONTROL         "设置代理用户密码",IDC_AUTH_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,42,79,80,10
+    EDITTEXT        IDC_PROXY_UNAME_EDT,41,92,54,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROXY_PASSWD_EDT,135,92,56,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,110,120,45,14
+    PUSHBUTTON      "取消",IDCANCEL,167,120,45,14
+    GROUPBOX        "",IDC_STATIC,0,0,220,116
+    RTEXT           "代理方式:",IDC_TYPE_STC,3,47,36,8
+    RTEXT           "服务器:",IDC_SERV_STC,11,64,28,8
+    RTEXT           "用户名:",IDC_UNAME_STC,12,93,28,8
+    RTEXT           "密码:",IDC_PASSWD_STC,112,94,20,8
+    LTEXT           "端口:",IDC_PORT_STC,143,64,20,8
+END
+
+IDD_FINISH_DLG DIALOGEX 0, 0, 195, 170
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "结束",IDC_DISPLAY_STC,34,45,127,40
+    GROUPBOX        "设置完成:",IDC_STATIC,13,26,165,73
+END
+
+IDD_BUTTON_DLG DIALOGEX 0, 0, 133, 15
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "",IDC_PREV,0,0,59,15
+    DEFPUSHBUTTON   "",IDC_NEXT,74,0,59,15
+END
+
+IDD_COVER_DLG DIALOGEX 0, 0, 195, 170
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "设置客户端用户及数据.",IDC_STATIC,49,60,84,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "西联数据"
+            VALUE "FileDescription", "本地用户生成向导"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "logiwiza.exe"
+            VALUE "LegalCopyright", "(C) 西联数据 保留所有权利。"
+            VALUE "OriginalFilename", "logiwiza.exe"
+            VALUE "ProductName", "同步网盘"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_WIZARD              BITMAP                  "res\\sdwizard.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_WIZARD_DLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 246
+    END
+
+    IDD_LOGIN_PAGE_DLG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_FORMAT_PAGE_DLG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_DISKSETTING_PAGE_DLG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_FINISH_DLG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_COVER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PROXIES_DLG DLGINIT
+BEGIN
+    IDC_TYPE_CBO, 0x403, 5, 0
+0x5448, 0x5054, "\000" 
+    IDC_TYPE_CBO, 0x403, 6, 0
+0x5448, 0x5054, 0x0053, 
+    IDC_TYPE_CBO, 0x403, 7, 0
+0x4f53, 0x4b43, 0x3453, "\000" 
+    IDC_TYPE_CBO, 0x403, 7, 0
+0x4f53, 0x4b43, 0x3553, "\000" 
+    0
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\logiwiza.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

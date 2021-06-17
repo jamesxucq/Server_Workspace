@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RegisServ Version="1.2.1">
+    <ServConfig>
+        <User Group="nobody">nobody</User>
+        <Port>8080,8079</Port>
+        <MaxConnecting>128</MaxConnecting>
+        <TimeOut>30</TimeOut>
+        <LeaseTime>480</LeaseTime>
+        <LockFile>Default</LockFile>
+        <PidFile>Default</PidFile>
+    </ServConfig>
+    <AuthDB>
+        <Address Port="3306">127.0.0.1</Address>
+        <DBName>AuthDB</DBName>
+        <User Name="root" Password="root"/>
+        <Ping Name="ping_auth" UserId="0x00"/>
+    </AuthDB>
+    <LogConfig>
+        <RuntimeLog DebugLevel="MAX">Default</RuntimeLog>
+        <AccessLog>Default</AccessLog>
+    </LogConfig>		
+</RegisServ>

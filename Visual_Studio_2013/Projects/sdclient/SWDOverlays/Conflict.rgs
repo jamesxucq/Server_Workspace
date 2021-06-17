@@ -1,0 +1,51 @@
+HKCR
+{
+	SWDOverlays.Conflict.1 = s 'Conflict Class'
+	{
+		CLSID = s '{B0128151-D09A-44D6-9585-E6EC694DFE53}'
+	}
+	SWDOverlays.Conflict = s 'Conflict Class'
+	{
+		CLSID = s '{B0128151-D09A-44D6-9585-E6EC694DFE53}'
+		CurVer = s 'SWDOverlays.Conflict.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {B0128151-D09A-44D6-9585-E6EC694DFE53} = s 'Conflict Class'
+		{
+			ProgID = s 'SWDOverlays.Conflict.1'
+			VersionIndependentProgID = s 'SWDOverlays.Conflict'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{BCC64F53-8186-4EEE-93D2-DD7C371188B2}'
+		}
+	}
+}
+
+HKLM
+{
+  NoRemove SOFTWARE
+  {
+    NoRemove Microsoft
+    {
+      NoRemove Windows
+      {
+        NoRemove CurrentVersion
+        {
+          NoRemove Explorer
+          {
+            NoRemove ShellIconOverlayIdentifiers
+            {
+              ForceRemove 00SWD_Conflict = s '{B0128151-D09A-44D6-9585-E6EC694DFE53}'
+              {
+              }           
+            }
+          }
+        }
+      }
+    }
+  }
+}

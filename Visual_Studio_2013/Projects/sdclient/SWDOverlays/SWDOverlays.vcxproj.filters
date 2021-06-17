@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="源文件\clientcom">
+      <UniqueIdentifier>{f464b4a6-e621-484c-abd5-0f31bdeda9ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\clientcom\utility">
+      <UniqueIdentifier>{2e27339a-548c-4dce-a4aa-be1d659c843b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="头文件\clientcom">
+      <UniqueIdentifier>{5de40e83-757e-4109-91b6-dd056571917f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\clientcom\utility">
+      <UniqueIdentifier>{0f4d7036-ea8b-4761-bf09-a2e1fedbe585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="生成的文件">
+      <UniqueIdentifier>{57d383b0-c144-429a-b013-367a6e019492}</UniqueIdentifier>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Added.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CacheObject.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CacheUtility.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Conflict.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Delete.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Forbid.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Locked.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Modified.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Normal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OverlayBzl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadOnly.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ShellThread.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SWDOverlays.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Syncing.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\utility\ulog.cpp">
+      <Filter>源文件\clientcom\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="SWDOverlays_i.c">
+      <Filter>生成的文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SWDOverlays.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="Added.rgs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Conflict.rgs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Delete.rgs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Forbid.rgs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Locked.rgs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Modified.rgs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Normal.rgs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="ReadOnly.rgs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="SWDOverlays.rgs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Syncing.rgs">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="SWDOverlays.idl">
+      <Filter>源文件</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Added.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CacheObject.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CacheUtility.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="commonheader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Conflict.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Delete.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dllmain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Forbid.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Locked.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Modified.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Normal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OverlayBzl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadOnly.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ShellThread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Syncing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\ShellInterface.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\utility\ulog.h">
+      <Filter>头文件\clientcom\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="SWDOverlays_i.h">
+      <Filter>生成的文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SWDOverlays.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

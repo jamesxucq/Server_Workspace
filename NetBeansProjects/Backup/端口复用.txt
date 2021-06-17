@@ -1,0 +1,9 @@
+多个socket绑定同一个端口，叫做端口复用
+下列代码可以使用socket绑定多次
+//SO_REUSEADDR选项就是可以实现端口重绑定的  
+　　if(setsockopt(s,SOL_SOCKET,SO_REUSEADDR,(char *)&val,sizeof(val))!=0)  
+　　{  
+　　printf("error!setsockopt failed! ");  
+　　return -1;  
+　　}  
+端口复用真正的用处主要在服务器编程：当服务器需要重启时，经常会碰到端口尚未完全关闭的情况，这时如果不设置端口复用，则无法完成绑定，因为端口还处于被别的套接口绑定的状态之中。

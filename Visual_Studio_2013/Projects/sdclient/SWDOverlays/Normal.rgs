@@ -1,0 +1,51 @@
+HKCR
+{
+	SWDOverlays.Normal.1 = s 'Normal Class'
+	{
+		CLSID = s '{1A910B09-7B75-4BAD-9600-28649F2CF9F7}'
+	}
+	SWDOverlays.Normal = s 'Normal Class'
+	{
+		CLSID = s '{1A910B09-7B75-4BAD-9600-28649F2CF9F7}'
+		CurVer = s 'SWDOverlays.Normal.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {1A910B09-7B75-4BAD-9600-28649F2CF9F7} = s 'Normal Class'
+		{
+			ProgID = s 'SWDOverlays.Normal.1'
+			VersionIndependentProgID = s 'SWDOverlays.Normal'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{BCC64F53-8186-4EEE-93D2-DD7C371188B2}'
+		}
+	}
+}
+
+HKLM
+{
+  NoRemove SOFTWARE
+  {
+    NoRemove Microsoft
+    {
+      NoRemove Windows
+      {
+        NoRemove CurrentVersion
+        {
+          NoRemove Explorer
+          {
+            NoRemove ShellIconOverlayIdentifiers
+            {
+              ForceRemove 00SWD_Normal = s '{1A910B09-7B75-4BAD-9600-28649F2CF9F7}'
+              {
+              }           
+            }
+          }
+        }
+      }
+    }
+  }
+}

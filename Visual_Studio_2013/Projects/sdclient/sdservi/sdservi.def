@@ -1,0 +1,21 @@
+LIBRARY	"sdservi"
+
+EXPORTS
+	DebugDetail
+	DeleUserSpace
+	
+	EnableDeviceDriver
+	DisableDeviceDriver
+	CopyDriver
+	
+	InstallServiceEx
+	EnableService
+	DisableService
+	
+	ExecuteApplica
+	EndApplica
+	ExecuteApplicaEx
+
+	AddiApplicaAuto
+	AddiApplicaAutoEx
+	DeliApplicaAuto

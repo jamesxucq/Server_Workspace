@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SyncServ Version="1.2.1">
+    <ServConfig>
+        <Address>10.0.0.103</Address>
+        <MaxConnecting>512</MaxConnecting>
+        <TimeOut>120</TimeOut>
+        <SessionTimeOut>180</SessionTimeOut>
+        <LockFile>/var/run/syncserv.lock</LockFile>
+        <PidFile>/var/run/syncserv.pid</PidFile>
+        <Anchor Index="~/anchor_inde.ndx" Data="~/anchor_data.acd"/>
+    </ServConfig>
+    <ServeDB>
+        <Address Port="3306">127.0.0.1</Address>
+        <DBName>AuthDB</DBName>
+        <User Name="root" Password="root"/>
+        <Ping CacheAddr="127.0.0.1" Port="0x00"/>
+    </ServeDB>
+    <BackupCtrl>
+        <MaxModify IntervTime="600">16</MaxModify>
+        <MaxDelete IntervTime="300">128</MaxDelete>
+    </BackupCtrl>
+    <LogConfig>
+        <RuntimeLog DebugLevel="MAX">/var/log/sync_cloud/sync_serv.log</RuntimeLog>
+        <AccessLog>/var/log/sync_cloud/sync_access.log</AccessLog>
+    </LogConfig>	
+</SyncServ>
+
+

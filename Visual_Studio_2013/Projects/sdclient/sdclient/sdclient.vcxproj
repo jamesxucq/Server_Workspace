@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DA47C6AE-C6BF-4973-83F8-A704ADCD0FA9}</ProjectGuid>
+    <RootNamespace>sdclient</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/DNDEBUG /D_CRT_SECURE_NO_WARNINGS /wd4244 /wd4351 /wd4800 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>D:\Program Files\boost_1_60_0;..\third party;..\third party\dbz;.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>x64;_WINDOWS;_DEBUG;SWD_APPLICATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/DNDEBUG /D_CRT_SECURE_NO_WARNINGS /wd4244 /wd4351 /wd4800 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>D:\Program Files\boost_1_60_0;..\third party;..\third party\dbz;.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>x64;_WINDOWS;_DEBUG;SWD_APPLICATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/DNDEBUG /D_CRT_SECURE_NO_WARNINGS /wd4244 /wd4351 /wd4800 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>D:\Program Files\boost_1_60_0;..\third party;..\third party\dbz;.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>x64;_WINDOWS;NDEBUG;SWD_APPLICATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/DNDEBUG /D_CRT_SECURE_NO_WARNINGS /wd4244 /wd4351 /wd4800 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>D:\Program Files\boost_1_60_0;..\third party;..\third party\dbz;.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>x64;_WINDOWS;NDEBUG;SWD_APPLICATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\clientcom\ActionHandler.cpp" />
+    <ClCompile Include="..\clientcom\ActionUtility.cpp" />
+    <ClCompile Include="..\clientcom\AdvaTView.cpp" />
+    <ClCompile Include="..\clientcom\Anchor.cpp" />
+    <ClCompile Include="..\clientcom\AnchorCache.cpp" />
+    <ClCompile Include="..\clientcom\AnchorXml.cpp" />
+    <ClCompile Include="..\clientcom\BuildHTable.cpp" />
+    <ClCompile Include="..\clientcom\BuildUtility.cpp" />
+    <ClCompile Include="..\clientcom\Checksum.cpp" />
+    <ClCompile Include="..\clientcom\ConfigurationBzl.cpp" />
+    <ClCompile Include="..\clientcom\DirectSockets.cpp" />
+    <ClCompile Include="..\clientcom\DiresVec.cpp" />
+    <ClCompile Include="..\clientcom\DiresXml.cpp" />
+    <ClCompile Include="..\clientcom\Encoding.cpp" />
+    <ClCompile Include="..\clientcom\ErrPrint.cpp" />
+    <ClCompile Include="..\clientcom\FastActXml.cpp" />
+    <ClCompile Include="..\clientcom\FileChks.cpp" />
+    <ClCompile Include="..\clientcom\FileConfli.cpp" />
+    <ClCompile Include="..\clientcom\FileForbid.cpp" />
+    <ClCompile Include="..\clientcom\FilesVec.cpp" />
+    <ClCompile Include="..\clientcom\FileUtility.cpp" />
+    <ClCompile Include="..\clientcom\ListVObj.cpp" />
+    <ClCompile Include="..\clientcom\logger_ansi.cpp" />
+    <ClCompile Include="..\clientcom\MatchUtility.cpp" />
+    <ClCompile Include="..\clientcom\NTFSLibrary.cpp" />
+    <ClCompile Include="..\clientcom\ParseConfig.cpp" />
+    <ClCompile Include="..\clientcom\Privilege.cpp" />
+    <ClCompile Include="..\clientcom\ProxyConnect.cpp" />
+    <ClCompile Include="..\clientcom\ProxySockets.cpp" />
+    <ClCompile Include="..\clientcom\QueryXml.cpp" />
+    <ClCompile Include="..\clientcom\RecursiveUtility.cpp" />
+    <ClCompile Include="..\clientcom\RegistXml.cpp" />
+    <ClCompile Include="..\clientcom\ReplyComand.cpp" />
+    <ClCompile Include="..\clientcom\ReplyHandler.cpp" />
+    <ClCompile Include="..\clientcom\ReplySeionBzl.cpp" />
+    <ClCompile Include="..\clientcom\ResVector.cpp" />
+    <ClCompile Include="..\clientcom\SDTProtocol.cpp" />
+    <ClCompile Include="..\clientcom\SDTPUtility.cpp" />
+    <ClCompile Include="..\clientcom\Session.cpp" />
+    <ClCompile Include="..\clientcom\SettingsXml.cpp" />
+    <ClCompile Include="..\ClientCom\ShellLinker.cpp" />
+    <ClCompile Include="..\clientcom\ShellUtility.cpp" />
+    <ClCompile Include="..\clientcom\SlowAttXml.cpp" />
+    <ClCompile Include="..\clientcom\StringUtility.cpp" />
+    <ClCompile Include="..\clientcom\TaskListObj.cpp" />
+    <ClCompile Include="..\clientcom\TasksVec.cpp" />
+    <ClCompile Include="..\clientcom\TRANSCache.cpp" />
+    <ClCompile Include="..\clientcom\TRANSHandler.cpp" />
+    <ClCompile Include="..\clientcom\TRANSSeionBzl.cpp" />
+    <ClCompile Include="..\clientcom\TRANSSockets.cpp" />
+    <ClCompile Include="..\clientcom\TVUtility.cpp" />
+    <ClCompile Include="..\clientcom\utility\adler32.cpp" />
+    <ClCompile Include="..\clientcom\utility\base64.cpp" />
+    <ClCompile Include="..\clientcom\utility\hash_func.cpp" />
+    <ClCompile Include="..\clientcom\utility\hash_table.cpp" />
+    <ClCompile Include="..\clientcom\utility\md5.cpp" />
+    <ClCompile Include="..\clientcom\utility\queue.cpp" />
+    <ClCompile Include="..\clientcom\utility\sha1.cpp" />
+    <ClCompile Include="..\clientcom\utility\strptime.cpp" />
+    <ClCompile Include="..\clientcom\utility\tiny_pool.cpp" />
+    <ClCompile Include="..\clientcom\utility\ulog.cpp" />
+    <ClCompile Include="..\clientcom\ValueLayer.cpp" />
+    <ClCompile Include="..\clientcom\VolumeUtility.cpp" />
+    <ClCompile Include="..\third party\BinaryLogger.cpp" />
+    <ClCompile Include="..\third party\BtnST.cpp" />
+    <ClCompile Include="..\third party\DialogCode.cpp" />
+    <ClCompile Include="..\third party\DirectoryChanges.cpp" />
+    <ClCompile Include="..\third party\DirectoryHandler.cpp" />
+    <ClCompile Include="..\third party\DiskUtility.cpp" />
+    <ClCompile Include="..\third party\FileDisk.cpp" />
+    <ClCompile Include="..\third party\FolderDialog.cpp" />
+    <ClCompile Include="..\third party\InstallService.cpp" />
+    <ClCompile Include="..\third party\LoadDriver.cpp" />
+    <ClCompile Include="..\third party\Logger.cpp" />
+    <ClCompile Include="..\third party\Markup.cpp" />
+    <ClCompile Include="..\third party\memory_utility.cpp" />
+    <ClCompile Include="..\third party\RiverFS\ChksList.cpp" />
+    <ClCompile Include="..\third party\RiverFS\ChksUtility.cpp" />
+    <ClCompile Include="..\third party\RiverFS\CommonUtility.cpp" />
+    <ClCompile Include="..\third party\RiverFS\CreatRiver.cpp" />
+    <ClCompile Include="..\third party\RiverFS\FilesRiver.cpp" />
+    <ClCompile Include="..\third party\RiverFS\FolderUtility.cpp" />
+    <ClCompile Include="..\third party\RiverFS\INodeUtility.cpp" />
+    <ClCompile Include="..\third party\RiverFS\md5.cpp" />
+    <ClCompile Include="..\third party\RiverFS\RiverFolder.cpp" />
+    <ClCompile Include="..\third party\RiverFS\RiverFS.cpp" />
+    <ClCompile Include="..\third party\RiverFS\RiverUtility.cpp" />
+    <ClCompile Include="..\third party\RiverFS\sha1.cpp" />
+    <ClCompile Include="..\third party\Subclass.cpp" />
+    <ClCompile Include="..\third party\SystemCall.cpp" />
+    <ClCompile Include="..\third party\tiny_map.cpp" />
+    <ClCompile Include="..\third party\tiny_map64.cpp" />
+    <ClCompile Include="..\third party\TrayIcon.cpp" />
+    <ClCompile Include="AboutDlg.cpp" />
+    <ClCompile Include="AccountDlg.cpp" />
+    <ClCompile Include="AddPasswordDlg.cpp" />
+    <ClCompile Include="AdvancedDlg.cpp" />
+    <ClCompile Include="AnchorBzl.cpp" />
+    <ClCompile Include="ApplicaBzl.cpp" />
+    <ClCompile Include="BandwidthDlg.cpp" />
+    <ClCompile Include="BuildTasksBzl.cpp" />
+    <ClCompile Include="ButtonDlg.cpp" />
+    <ClCompile Include="ChangePasswordDlg.cpp" />
+    <ClCompile Include="ChildrenDlg.cpp" />
+    <ClCompile Include="ChksAddi.cpp" />
+    <ClCompile Include="ClientDlg.cpp" />
+    <ClCompile Include="DebugPrinter.cpp" />
+    <ClCompile Include="DowndDiresDlg.cpp" />
+    <ClCompile Include="ExceptAction.cpp" />
+    <ClCompile Include="ExecuteTransmitBzl.cpp" />
+    <ClCompile Include="ExecuteUtility.cpp" />
+    <ClCompile Include="FastUtility.cpp" />
+    <ClCompile Include="FinishUtility.cpp" />
+    <ClCompile Include="GeneralDlg.cpp" />
+    <ClCompile Include="HandleTasksBzl.cpp" />
+    <ClCompile Include="KeepAlive.cpp" />
+    <ClCompile Include="ListUtility.cpp" />
+    <ClCompile Include="LkAiUtili.cpp" />
+    <ClCompile Include="LocalBzl.cpp" />
+    <ClCompile Include="LocalObj.cpp" />
+    <ClCompile Include="LockAnchor.cpp" />
+    <ClCompile Include="LockedAction.cpp" />
+    <ClCompile Include="MountVolumeBzl.cpp" />
+    <ClCompile Include="MoveUserspaceBzl.cpp" />
+    <ClCompile Include="MoveUserspaceDlg.cpp" />
+    <ClCompile Include="NodeUtility.cpp" />
+    <ClCompile Include="OperaExclus.cpp" />
+    <ClCompile Include="OptionsDlg.cpp" />
+    <ClCompile Include="ParseLkAi.cpp" />
+    <ClCompile Include="PoolResizeBzl.cpp" />
+    <ClCompile Include="PrepaCache.cpp" />
+    <ClCompile Include="ProduceObj.cpp" />
+    <ClCompile Include="ProxiesDlg.cpp" />
+    <ClCompile Include="sdclient.cpp" />
+    <ClCompile Include="sdTrayIcon.cpp" />
+    <ClCompile Include="SecurityDlg.cpp" />
+    <ClCompile Include="SelectiveBzl.cpp" />
+    <ClCompile Include="SelectiveDlg.cpp" />
+    <ClCompile Include="SHAHTable.cpp" />
+    <ClCompile Include="ShellLinkBzl.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TRANSObject.cpp" />
+    <ClCompile Include="TRANSThread.cpp" />
+    <ClCompile Include="TRANSWorker.cpp" />
+    <ClCompile Include="ValidateDlg.cpp" />
+    <ClCompile Include="VerifyTasksBzl.cpp" />
+    <ClCompile Include="VerifyUtility.cpp" />
+    <ClCompile Include="WatcherBzl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\clientcom\ActionHandler.h" />
+    <ClInclude Include="..\clientcom\ActionUtility.h" />
+    <ClInclude Include="..\clientcom\AdvaTView.h" />
+    <ClInclude Include="..\clientcom\Anchor.h" />
+    <ClInclude Include="..\clientcom\AnchorCache.h" />
+    <ClInclude Include="..\clientcom\AnchorXml.h" />
+    <ClInclude Include="..\clientcom\BuildHTable.h" />
+    <ClInclude Include="..\clientcom\BuildUtility.h" />
+    <ClInclude Include="..\clientcom\Checksum.h" />
+    <ClInclude Include="..\clientcom\clientcom.h" />
+    <ClInclude Include="..\clientcom\client_macro.h" />
+    <ClInclude Include="..\clientcom\common_macro.h" />
+    <ClInclude Include="..\clientcom\ConfigurationBzl.h" />
+    <ClInclude Include="..\clientcom\DirectSockets.h" />
+    <ClInclude Include="..\clientcom\DiresVec.h" />
+    <ClInclude Include="..\clientcom\DiresXml.h" />
+    <ClInclude Include="..\clientcom\ErrorCode.h" />
+    <ClInclude Include="..\clientcom\ErrPrint.h" />
+    <ClInclude Include="..\clientcom\FastActXml.h" />
+    <ClInclude Include="..\clientcom\FileChks.h" />
+    <ClInclude Include="..\clientcom\FileConfli.h" />
+    <ClInclude Include="..\clientcom\FileForbid.h" />
+    <ClInclude Include="..\clientcom\FilesVec.h" />
+    <ClInclude Include="..\clientcom\FileUtility.h" />
+    <ClInclude Include="..\clientcom\iattb_type.h" />
+    <ClInclude Include="..\clientcom\ListVObj.h" />
+    <ClInclude Include="..\clientcom\logger_ansi.h" />
+    <ClInclude Include="..\clientcom\MatchUtility.h" />
+    <ClInclude Include="..\clientcom\NTFSLibrary.h" />
+    <ClInclude Include="..\clientcom\ParseConfig.h" />
+    <ClInclude Include="..\clientcom\Privilege.h" />
+    <ClInclude Include="..\clientcom\ProxyConnect.h" />
+    <ClInclude Include="..\clientcom\ProxySockets.h" />
+    <ClInclude Include="..\clientcom\QueryXml.h" />
+    <ClInclude Include="..\clientcom\RecursiveUtility.h" />
+    <ClInclude Include="..\clientcom\RegistXml.h" />
+    <ClInclude Include="..\clientcom\ReplyComand.h" />
+    <ClInclude Include="..\clientcom\ReplyHandler.h" />
+    <ClInclude Include="..\clientcom\ReplySessionBzl.h" />
+    <ClInclude Include="..\clientcom\ResVector.h" />
+    <ClInclude Include="..\clientcom\SDTProtocol.h" />
+    <ClInclude Include="..\clientcom\SDTPUtility.h" />
+    <ClInclude Include="..\clientcom\Session.h" />
+    <ClInclude Include="..\clientcom\SettingsXml.h" />
+    <ClInclude Include="..\ClientCom\ShellInterface.h" />
+    <ClInclude Include="..\ClientCom\ShellLinker.h" />
+    <ClInclude Include="..\clientcom\ShellUtility.h" />
+    <ClInclude Include="..\clientcom\SlowAttXml.h" />
+    <ClInclude Include="..\clientcom\StringUtility.h" />
+    <ClInclude Include="..\clientcom\TaskListObj.h" />
+    <ClInclude Include="..\clientcom\TasksVec.h" />
+    <ClInclude Include="..\clientcom\TRANSCache.h" />
+    <ClInclude Include="..\clientcom\TRANSHandler.h" />
+    <ClInclude Include="..\clientcom\TRANSSessionBzl.h" />
+    <ClInclude Include="..\clientcom\TRANSSockets.h" />
+    <ClInclude Include="..\clientcom\TVUtility.h" />
+    <ClInclude Include="..\clientcom\utility\adler32.h" />
+    <ClInclude Include="..\clientcom\utility\base64.h" />
+    <ClInclude Include="..\clientcom\utility\hash_func.h" />
+    <ClInclude Include="..\clientcom\utility\hash_table.h" />
+    <ClInclude Include="..\clientcom\utility\md5.h" />
+    <ClInclude Include="..\clientcom\utility\queue.h" />
+    <ClInclude Include="..\clientcom\utility\sha1.h" />
+    <ClInclude Include="..\clientcom\utility\strptime.h" />
+    <ClInclude Include="..\clientcom\utility\tiny_pool.h" />
+    <ClInclude Include="..\clientcom\utility\ulog.h" />
+    <ClInclude Include="..\clientcom\ValueLayer.h" />
+    <ClInclude Include="..\clientcom\VolumeUtility.h" />
+    <ClInclude Include="..\third party\BinaryLogger.h" />
+    <ClInclude Include="..\third party\BtnST.h" />
+    <ClInclude Include="..\third party\dbz\kccommon.h" />
+    <ClInclude Include="..\third party\dbz\kccompare.h" />
+    <ClInclude Include="..\third party\dbz\kccompress.h" />
+    <ClInclude Include="..\third party\dbz\kcdb.h" />
+    <ClInclude Include="..\third party\dbz\kcfile.h" />
+    <ClInclude Include="..\third party\dbz\kchashdb.h" />
+    <ClInclude Include="..\third party\dbz\kcmap.h" />
+    <ClInclude Include="..\third party\dbz\kcplantdb.h" />
+    <ClInclude Include="..\third party\dbz\kcregex.h" />
+    <ClInclude Include="..\third party\dbz\kcthread.h" />
+    <ClInclude Include="..\third party\dbz\kcutil.h" />
+    <ClInclude Include="..\third party\dbz\stdint.h" />
+    <ClInclude Include="..\third party\DialogCode.h" />
+    <ClInclude Include="..\third party\DirectoryChanges.h" />
+    <ClInclude Include="..\third party\DirectoryHandler.h" />
+    <ClInclude Include="..\third party\DiskUtility.h" />
+    <ClInclude Include="..\third party\FileDisk.h" />
+    <ClInclude Include="..\third party\fmifs.h" />
+    <ClInclude Include="..\third party\FolderDialog.h" />
+    <ClInclude Include="..\third party\InstallService.h" />
+    <ClInclude Include="..\third party\LoadDriver.h" />
+    <ClInclude Include="..\third party\Logger.h" />
+    <ClInclude Include="..\third party\Markup.h" />
+    <ClInclude Include="..\third party\memory_utility.h" />
+    <ClInclude Include="..\third party\RiverFS\ChksList.h" />
+    <ClInclude Include="..\third party\RiverFS\ChksUtility.h" />
+    <ClInclude Include="..\third party\RiverFS\CommonUtility.h" />
+    <ClInclude Include="..\third party\RiverFS\CreatRiver.h" />
+    <ClInclude Include="..\third party\RiverFS\FilesRiver.h" />
+    <ClInclude Include="..\third party\RiverFS\FolderUtility.h" />
+    <ClInclude Include="..\third party\RiverFS\INodeUtility.h" />
+    <ClInclude Include="..\third party\RiverFS\md5.h" />
+    <ClInclude Include="..\third party\RiverFS\RiverFolder.h" />
+    <ClInclude Include="..\third party\RiverFS\RiverFS.h" />
+    <ClInclude Include="..\third party\RiverFS\RiverUtility.h" />
+    <ClInclude Include="..\third party\RiverFS\sha1.h" />
+    <ClInclude Include="..\third party\Subclass.h" />
+    <ClInclude Include="..\third party\SystemCall.h" />
+    <ClInclude Include="..\third party\third_party.h" />
+    <ClInclude Include="..\third party\tiny_map.h" />
+    <ClInclude Include="..\third party\tiny_map64.h" />
+    <ClInclude Include="..\third party\TrayIcon.h" />
+    <ClInclude Include="AboutDlg.h" />
+    <ClInclude Include="AccountDlg.h" />
+    <ClInclude Include="AddPasswordDlg.h" />
+    <ClInclude Include="AdvancedDlg.h" />
+    <ClInclude Include="AnchorBzl.h" />
+    <ClInclude Include="ApplicaBzl.h" />
+    <ClInclude Include="BandwidthDlg.h" />
+    <ClInclude Include="BuildTasksBzl.h" />
+    <ClInclude Include="ButtonDlg.h" />
+    <ClInclude Include="ChangePasswordDlg.h" />
+    <ClInclude Include="ChildrenDlg.h" />
+    <ClInclude Include="ChksAddi.h" />
+    <ClInclude Include="ClientDlg.h" />
+    <ClInclude Include="DebugPrinter.h" />
+    <ClInclude Include="DowndDiresDlg.h" />
+    <ClInclude Include="ExceptAction.h" />
+    <ClInclude Include="ExecuteTransmitBzl.h" />
+    <ClInclude Include="ExecuteUtility.h" />
+    <ClInclude Include="FastUtility.h" />
+    <ClInclude Include="FinishUtility.h" />
+    <ClInclude Include="GeneralDlg.h" />
+    <ClInclude Include="HandleTasksBzl.h" />
+    <ClInclude Include="KeepAlive.h" />
+    <ClInclude Include="ListUtility.h" />
+    <ClInclude Include="LkAiUtili.h" />
+    <ClInclude Include="LocalBzl.h" />
+    <ClInclude Include="LocalObj.h" />
+    <ClInclude Include="LockAnchor.h" />
+    <ClInclude Include="LockedAction.h" />
+    <ClInclude Include="MountVolumeBzl.h" />
+    <ClInclude Include="MoveUserspaceBzl.h" />
+    <ClInclude Include="MoveUserspaceDlg.h" />
+    <ClInclude Include="NodeUtility.h" />
+    <ClInclude Include="OperaExclus.h" />
+    <ClInclude Include="OptionsDlg.h" />
+    <ClInclude Include="ParseLkAi.h" />
+    <ClInclude Include="PoolResizeBzl.h" />
+    <ClInclude Include="PrepaCache.h" />
+    <ClInclude Include="ProduceObj.h" />
+    <ClInclude Include="ProxiesDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="sdclient.h" />
+    <ClInclude Include="sdTrayIcon.h" />
+    <ClInclude Include="SecurityDlg.h" />
+    <ClInclude Include="SelectiveBzl.h" />
+    <ClInclude Include="SelectiveDlg.h" />
+    <ClInclude Include="SHAHTable.h" />
+    <ClInclude Include="ShellLinkBzl.h" />
+    <ClInclude Include="ShellUtility.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TasksVec.h" />
+    <ClInclude Include="TRANSObject.h" />
+    <ClInclude Include="TRANSThread.h" />
+    <ClInclude Include="TRANSWorker.h" />
+    <ClInclude Include="ValidateDlg.h" />
+    <ClInclude Include="VerifyTasksBzl.h" />
+    <ClInclude Include="VerifyUtility.h" />
+    <ClInclude Include="WatcherBzl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bm_background.bmp" />
+    <Image Include="res\bm_checkstate.bmp" />
+    <Image Include="res\bm_connect.bmp" />
+    <Image Include="res\bm_fabout.bmp" />
+    <Image Include="res\bm_faccount.bmp" />
+    <Image Include="res\bm_fadvanced.bmp" />
+    <Image Include="res\bm_fbandwidth.bmp" />
+    <Image Include="res\bm_fgeneral.bmp" />
+    <Image Include="res\bm_folderlist.bmp" />
+    <Image Include="res\bm_fproxies.bmp" />
+    <Image Include="res\bm_fsecurity.bmp" />
+    <Image Include="res\bm_nabout.bmp" />
+    <Image Include="res\bm_naccount.bmp" />
+    <Image Include="res\bm_nadvanced.bmp" />
+    <Image Include="res\bm_nbandwidth.bmp" />
+    <Image Include="res\bm_ngeneral.bmp" />
+    <Image Include="res\bm_nproxies.bmp" />
+    <Image Include="res\bm_nsecurity.bmp" />
+    <Image Include="res\bm_paused.bmp" />
+    <Image Include="res\bm_running.bmp" />
+    <Image Include="res\bm_sabout.bmp" />
+    <Image Include="res\bm_saccount.bmp" />
+    <Image Include="res\bm_sadvanced.bmp" />
+    <Image Include="res\bm_sbandwidth.bmp" />
+    <Image Include="res\bm_sgeneral.bmp" />
+    <Image Include="res\bm_sproxies.bmp" />
+    <Image Include="res\bm_ssecurity.bmp" />
+    <Image Include="res\normal.ico" />
+    <Image Include="res\paused.ico" />
+    <Image Include="res\sdclient.ico" />
+    <Image Include="res\syncing_first.ico" />
+    <Image Include="res\syncing_second.ico" />
+    <Image Include="res\syncok.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="sdclient.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\sdclient.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="sdclient.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

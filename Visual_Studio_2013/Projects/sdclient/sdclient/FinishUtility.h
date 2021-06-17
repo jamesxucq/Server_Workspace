@@ -1,0 +1,28 @@
+#pragma once
+
+#include "TRANSWorker.h"
+//
+// #define	FINISH_VALUE_FAULT	SYNP_VALUE_FAULT		// -1
+// #define	FINISH_VALUE_RUNNING	SYNP_VALUE_RUNNING		// 0x00000000
+// #define	FINISH_VALUE_WAITING	SYNP_VALUE_WAITING		// 0x00000001
+// #define	FINISH_VALUE_PAUSED	SYNP_VALUE_PAUSED		// 0x00000002
+// #define	FINISH_VALUE_FORCESTOP	SYNP_VALUE_FORCESTOP	// 0x00000004
+#define	FINISH_VALUE_FINISH	SYNP_VALUE_FINISH		// 0x00000008
+#define	FINISH_VALUE_FAILED	SYNP_VALUE_FAILED		// 0x00000010
+// #define	FINISH_VALUE_KILLED	SYNP_VALUE_KILLED		// 0x00000020
+#define	FINISH_VALUE_NETWORK	SYNP_VALUE_NETWORK		// 0x00000040
+// #define	FINISH_VALUE_LOCKED	SYNP_VALUE_LOCKED		// 0x00000080
+// #define	FINISH_VALUE_EXCEPTION	SYNP_VALUE_EXCEPTION	// 0x00010000
+
+//
+struct FINISH_ARGUMENT {
+	struct SessionArgu tSeionArgu;
+	struct SocketsArgu tSockeArgu;
+};
+
+//
+namespace FinishUtility {
+	CTRANSWorker *CreateWorker(DWORD *cvalue, struct FINISH_ARGUMENT *pFinishArgu);
+	void DropWorker(CTRANSWorker *pFinishWorker);
+	void DestroyWorker(CTRANSWorker *pFinishWorker);
+};

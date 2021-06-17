@@ -1,0 +1,146 @@
+/*
+ * auth_bzl.c
+ *
+ *  Created on: 2010-3-10
+ *      Author: David
+ */
+
+#include "aserv_bzl.h"
+#include "auth_ctrl.h"
+#include "auth_bzl.h"
+#include "auth_cache.h"
+
+
+#define CREATE_AUTH_CONFIG(ACONFIG, CCONFIG) \
+    strcpy((ACONFIG)->address.sin_addr, (CCONFIG)->auth_db.address.sin_addr); \
+    (ACONFIG)->address.sin_port = (CCONFIG)->auth_db.address.sin_port; \
+    strcpy((ACONFIG)->database, (CCONFIG)->auth_db.database); \
+    strcpy((ACONFIG)->password, (CCONFIG)->auth_db.password); \
+    strcpy((ACONFIG)->user_name, (CCONFIG)->auth_db.user_name);
+
+static mongoc_client_t *reconn_client(mongoc_client_t *client, struct auth_config *config) {
+    mongoc_client_destroy (client);
+    mongoc_cleanup ();
+    //
+    mongoc_init ();
+    char uristr[URI_LENGTH];
+    sprintf(uristr, "mongodb://%s:%s@%s:%d/%s", config->user_name, config->password, 
+            config->address.sin_addr, config->address.sin_port, config->database);
+    mongoc_client_t *client_new = mongoc_client_new (uristr);
+    return client_new;
+}
+
+int authbzl_create(struct cache_config *config) {
+    int hashmap_size = config->max_connecting;
+    hashmap_size <<= 2;
+    _auth_cache_hm_ = create_hashmap(free, hashmap_size);
+//
+    CREATE_AUTH_CONFIG(&_auth_config_, config);
+    //
+    mongoc_init ();
+    char uristr[URI_LENGTH];
+    sprintf(uristr, "mongodb://%s:%s@%s:%d/%s", _auth_config_.user_name, 
+            _auth_config_.password, _auth_config_.address.sin_addr, 
+            _auth_config_.address.sin_port, _auth_config_.database);
+    _auth_client_ = mongoc_client_new (uristr);
+    if(!_auth_client_) {
+        _LOG_WARN("connect auth_db clent failed!");
+        return ERR_FAULT;
+    }
+//
+    if (volid_auth_dbase()) {
+fprintf(stderr, "connect auth_db failed!\n");
+        return ERR_FAULT;
+    }
+fprintf(stderr, "connect auth_db ok!\n");
+//
+    return ERR_SUCCESS; //succ
+}
+
+int authbzl_destroy() {
+    mongoc_client_destroy (_auth_client_);
+    mongoc_cleanup ();
+//
+    if (_auth_cache_hm_) {
+        hashm_del(_auth_cache_hm_);
+        _auth_cache_hm_ = NULL;
+    }
+//
+    return ERR_SUCCESS; //succ
+}
+
+inline struct auth_config *get_auth_config_bzl() {
+    return &_auth_config_;
+}
+
+inline int adata_clear_bzl() { // -1:fail 0:ok 1:exception
+    if (!_auth_cache_hm_) return -1;
+    hashm_clear(_auth_cache_hm_);
+    return 0;
+}
+
+inline int adata_erase_bzl(unsigned int uid) { // -1:fail 0:ok 1:exception
+    if (!_auth_cache_hm_) return -1;
+    struct auth_data *adata = hashm_value(uid, _auth_cache_hm_);
+    if (!adata) return 0x01;
+    if (adata->serv_locked) return 0x01;
+    hashm_remove(uid, _auth_cache_hm_);
+    return 0;
+}
+
+struct auth_data *get_adata_bzl(unsigned int uid) {
+    struct auth_data *adata = hashm_value(uid, _auth_cache_hm_);
+    if (adata) return adata;
+//
+    struct cache_value cvalue;
+    int mon_value = get_cvalue_by_uid(&cvalue, _auth_client_, _auth_config_.database, uid);
+    if (mon_value) {
+        _auth_client_ = reconn_client(_auth_client_, &_auth_config_);
+        mon_value = get_cvalue_by_uid(&cvalue, _auth_client_, _auth_config_.database, uid);
+        if(mon_value) return NULL;
+    }
+    adata = creat_adata(&cvalue);
+    if (!adata) return NULL;
+//
+    trans_auth_chks(adata->_author_chks_, cvalue.uid, cvalue.access_key);
+    strcpy(adata->req_valid, random_valid());
+_LOG_TRACE("init, new adata->req_valid:%s", adata->req_valid);
+    strcpy(adata->seion_id, random_seion_id());
+    adata->last_active = time(NULL);
+    adata->serv_locked = FALSE;
+//
+    hashm_insert(uid, adata, _auth_cache_hm_);
+    return adata;
+}
+
+struct auth_data *acache_update_bzl(unsigned int uid) {
+    struct auth_data *adata = hashm_value(uid, _auth_cache_hm_);
+    if (!adata) return NULL;
+    struct cache_value cvalue;
+    int mon_value = get_cvalue_by_uid(&cvalue, _auth_client_, _auth_config_.database, uid);
+    if (mon_value) {
+        _auth_client_ = reconn_client(_auth_client_, &_auth_config_);
+        mon_value = get_cvalue_by_uid(&cvalue, _auth_client_, _auth_config_.database, uid);
+        if(mon_value) return NULL;
+    } 
+    trans_auth_chks(adata->_author_chks_, adata->uid, cvalue.access_key);
+    return adata;
+}
+
+inline int volid_auth_dbase() {
+    int mon_value = ping_auth_dbase(_auth_client_, _auth_config_.database);
+    if(mon_value) {
+        _auth_client_ = reconn_client(_auth_client_, &_auth_config_);
+        mon_value = ping_auth_dbase(_auth_client_, _auth_config_.database);
+    }
+    return mon_value;
+}
+
+struct auth_data *creat_adata(struct cache_value *cvalue) {
+    struct auth_data *adata = (struct auth_data *) malloc(sizeof (struct auth_data));
+    if (!adata) return NULL;
+    memset(adata, '\0', sizeof (struct auth_data));
+    adata->uid = cvalue->uid;
+    strcpy(adata->location, cvalue->location);
+    return adata;
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Access Version="1.2.1">
+  <Dir Name="/" Key="dfaetd" />
+  <File Name="/dafd/df.c" Key="dfaetd" Attrib="Shared,ReadOnly">
+    <Friend Locked ="true">fdgdf</Friend>
+    <Friend>fdgdf</Friend>
+  </File>
+  <Dir Name="/RECYCLER" Key="dfaetd" Attrib="Shared">
+    <Friend>fdgdf</Friend>
+    <Friend>fdgdf</Friend>
+  </Dir>
+  <Dir Name="/RECYCLER" Key="dfaetd" Attrib="ReadOnly" />
+</Access>

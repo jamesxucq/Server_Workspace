@@ -1,0 +1,51 @@
+HKCR
+{
+	SWDOverlays.Locked.1 = s 'Locked Class'
+	{
+		CLSID = s '{69C22DEA-70D5-42BC-8F8F-369F14701891}'
+	}
+	SWDOverlays.Locked = s 'Locked Class'
+	{
+		CLSID = s '{69C22DEA-70D5-42BC-8F8F-369F14701891}'
+		CurVer = s 'SWDOverlays.Locked.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {69C22DEA-70D5-42BC-8F8F-369F14701891} = s 'Locked Class'
+		{
+			ProgID = s 'SWDOverlays.Locked.1'
+			VersionIndependentProgID = s 'SWDOverlays.Locked'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{BCC64F53-8186-4EEE-93D2-DD7C371188B2}'
+		}
+	}
+}
+
+HKLM
+{
+  NoRemove SOFTWARE
+  {
+    NoRemove Microsoft
+    {
+      NoRemove Windows
+      {
+        NoRemove CurrentVersion
+        {
+          NoRemove Explorer
+          {
+            NoRemove ShellIconOverlayIdentifiers
+            {
+              ForceRemove 00SWD_Locked = s '{69C22DEA-70D5-42BC-8F8F-369F14701891}'
+              {
+              }           
+            }
+          }
+        }
+      }
+    }
+  }
+}

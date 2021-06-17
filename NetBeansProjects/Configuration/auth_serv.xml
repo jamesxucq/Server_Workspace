@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthServ Version="1.2.1">
+    <ServConfig>
+        <Address>10.0.0.103</Address>
+        <MaxConnecting>128</MaxConnecting>
+        <TimeOut>30</TimeOut>
+        <SessionTimeOut>300</SessionTimeOut>
+        <LockFile>Default</LockFile>
+        <PidFile>Default</PidFile>
+    </ServConfig>
+    <Listen>
+        <Admin Name="David" Password="123456"/>
+        <Address>127.0.0.1</Address>
+        <Address>10.0.0.103</Address>
+    </Listen>
+    <ServeDB>
+        <Address Port="3306">127.0.0.1</Address>
+        <DBName>AuthDB</DBName>
+        <User Name="root" Password="root"/>
+        <Ping CacheAddr="127.0.0.1" Port="0x00"/>
+    </ServeDB>
+    <AuthDB>
+        <Address Port="3306">127.0.0.1</Address>
+        <DBName>AuthDB</DBName>
+        <User Name="root" Password="root"/>
+        <Ping Name="ping_auth" UserId="0x00"/>
+    </AuthDB>
+    <LogConfig>
+        <RuntimeLog DebugLevel="MAX">Default</RuntimeLog>
+        <AccessLog>Default</AccessLog>
+    </LogConfig>		
+</AuthServ>

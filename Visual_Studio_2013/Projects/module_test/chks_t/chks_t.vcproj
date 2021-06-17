@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9.00"
+	Name="chks_t"
+	ProjectGUID="{BF75679F-3CC3-4971-8D33-D6AB7F4916DC}"
+	RootNamespace="chks_t"
+	Keyword="MFCProj"
+	TargetFrameworkVersion="196613"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
+			IntermediateDirectory="$(ConfigurationName)"
+			ConfigurationType="1"
+			UseOfMFC="2"
+			CharacterSet="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="_DEBUG"
+				MkTypLibCompatible="false"
+				ValidateParameters="true"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="/DNDEBUG /D_CRT_SECURE_NO_WARNINGS /wd4244 /wd4351 /wd4800"
+				Optimization="0"
+				AdditionalIncludeDirectories="&quot;E:\Server Workspace\Visual_Studio_2008\Projects\module_test\chks_t\third party\RiverFS&quot;;&quot;E:\Server Workspace\Visual_Studio_2008\Projects\module_test\chks_t\third party\dbz&quot;"
+				PreprocessorDefinitions="WIN32;_WINDOWS;_DEBUG"
+				MinimalRebuild="true"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				UsePrecompiledHeader="2"
+				WarningLevel="3"
+				DebugInformationFormat="4"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_DEBUG"
+				Culture="2052"
+				AdditionalIncludeDirectories="$(IntDir)"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				LinkIncremental="2"
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
+			IntermediateDirectory="$(ConfigurationName)"
+			ConfigurationType="1"
+			UseOfMFC="2"
+			CharacterSet="1"
+			WholeProgramOptimization="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="NDEBUG"
+				MkTypLibCompatible="false"
+				ValidateParameters="true"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="2"
+				EnableIntrinsicFunctions="true"
+				PreprocessorDefinitions="WIN32;_WINDOWS;NDEBUG"
+				MinimalRebuild="false"
+				RuntimeLibrary="2"
+				EnableFunctionLevelLinking="true"
+				UsePrecompiledHeader="2"
+				WarningLevel="3"
+				DebugInformationFormat="3"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"
+				Culture="2052"
+				AdditionalIncludeDirectories="$(IntDir)"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				LinkIncremental="1"
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="源文件"
+			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
+			<File
+				RelativePath=".\chks_t.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\chks_tDlg.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\third party\Logger.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\third party\memory_utility.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\stdafx.cpp"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"
+					/>
+				</FileConfiguration>
+			</File>
+			<Filter
+				Name="third party"
+				>
+				<File
+					RelativePath=".\third party\tiny_map64.cpp"
+					>
+				</File>
+				<Filter
+					Name="RiverFS"
+					>
+					<File
+						RelativePath=".\third party\RiverFS\ChksList.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\RiverFS\ChksUtility.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\RiverFS\CommonUtility.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\RiverFS\CreatRiver.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\RiverFS\FilesRiver.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\RiverFS\FolderUtility.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\RiverFS\md5.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\RiverFS\RiverFolder.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\RiverFS\RiverFS.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\RiverFS\RiverUtility.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\RiverFS\sha1.cpp"
+						>
+					</File>
+				</Filter>
+			</Filter>
+		</Filter>
+		<Filter
+			Name="头文件"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
+			<File
+				RelativePath=".\chks_t.h"
+				>
+			</File>
+			<File
+				RelativePath=".\chks_tDlg.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Resource.h"
+				>
+			</File>
+			<File
+				RelativePath=".\stdafx.h"
+				>
+			</File>
+			<File
+				RelativePath=".\targetver.h"
+				>
+			</File>
+			<Filter
+				Name="third party"
+				>
+				<File
+					RelativePath=".\third party\Logger.h"
+					>
+				</File>
+				<File
+					RelativePath=".\third party\memory_utility.h"
+					>
+				</File>
+				<File
+					RelativePath=".\third party\tiny_map64.h"
+					>
+				</File>
+				<Filter
+					Name="RiverFS"
+					>
+					<File
+						RelativePath=".\third party\RiverFS\ChksList.h"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\RiverFS\ChksUtility.h"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\RiverFS\CommonUtility.h"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\RiverFS\CreatRiver.h"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\RiverFS\FilesRiver.h"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\RiverFS\FolderUtility.h"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\RiverFS\md5.h"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\RiverFS\RiverFolder.h"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\RiverFS\RiverFS.h"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\RiverFS\RiverUtility.h"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\RiverFS\sha1.h"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="dbz"
+					>
+					<File
+						RelativePath=".\third party\dbz\kccommon.h"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\dbz\kccompare.h"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\dbz\kccompress.h"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\dbz\kcdb.h"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\dbz\kcfile.h"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\dbz\kchashdb.h"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\dbz\kcmap.h"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\dbz\kcplantdb.h"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\dbz\kcregex.h"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\dbz\kcthread.h"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\dbz\kcutil.h"
+						>
+					</File>
+					<File
+						RelativePath=".\third party\dbz\stdint.h"
+						>
+					</File>
+				</Filter>
+			</Filter>
+		</Filter>
+		<Filter
+			Name="资源文件"
+			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
+			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
+			>
+			<File
+				RelativePath=".\res\chks_t.ico"
+				>
+			</File>
+			<File
+				RelativePath=".\chks_t.rc"
+				>
+			</File>
+			<File
+				RelativePath=".\res\chks_t.rc2"
+				>
+			</File>
+		</Filter>
+		<File
+			RelativePath=".\ReadMe.txt"
+			>
+		</File>
+	</Files>
+	<Globals>
+		<Global
+			Name="RESOURCE_FILE"
+			Value="chks_t.rc"
+		/>
+	</Globals>
+</VisualStudioProject>

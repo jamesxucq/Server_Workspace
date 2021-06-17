@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="源文件\clientcom">
+      <UniqueIdentifier>{b5ba34e4-092a-4f14-84cf-b1871a03ee19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\clientcom\utility">
+      <UniqueIdentifier>{ae332d2f-c51c-461e-bc34-0ffff7e6bffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\third party">
+      <UniqueIdentifier>{7034eb7d-5d66-4f1e-be8d-943b07c5fa5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="头文件\clientcom">
+      <UniqueIdentifier>{cbb827c8-a102-4686-b027-459b307789d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\clientcom\utility">
+      <UniqueIdentifier>{efdb2ade-1be8-4127-ba2e-1e19e341db61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\third party">
+      <UniqueIdentifier>{aebf891b-7045-475f-b728-3a9ff9d23757}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DowndBzl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DowndDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpUtility.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="InsLibrary.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LiveSocks.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="liveupda.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LiveUtility.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LiveVec.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\ProxyConnect.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateBzl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateXml.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\CheckSum.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\ConfigurationBzl.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\Encoding.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\FileUtility.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\ParseConfig.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\StringUtility.cpp">
+      <Filter>源文件\clientcom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\utility\base64.cpp">
+      <Filter>源文件\clientcom\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clientcom\utility\md5.cpp">
+      <Filter>源文件\clientcom\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\BinaryLogger.cpp">
+      <Filter>源文件\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\BtnST.cpp">
+      <Filter>源文件\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\DialogCode.cpp">
+      <Filter>源文件\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\DirectoryChanges.cpp">
+      <Filter>源文件\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\DirectoryHandler.cpp">
+      <Filter>源文件\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\DiskUtility.cpp">
+      <Filter>源文件\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\FileDisk.cpp">
+      <Filter>源文件\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\FolderDialog.cpp">
+      <Filter>源文件\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\InstallService.cpp">
+      <Filter>源文件\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\LoadDriver.cpp">
+      <Filter>源文件\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\Logger.cpp">
+      <Filter>源文件\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\Markup.cpp">
+      <Filter>源文件\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\memory_utility.cpp">
+      <Filter>源文件\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\Subclass.cpp">
+      <Filter>源文件\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\SystemCall.cpp">
+      <Filter>源文件\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\tiny_map.cpp">
+      <Filter>源文件\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\tiny_map64.cpp">
+      <Filter>源文件\third party</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third party\TrayIcon.cpp">
+      <Filter>源文件\third party</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DowndBzl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DowndDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpUtility.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="InsLibrary.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LiveSocks.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="liveupda.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LiveUtility.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LiveVec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateBzl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateXml.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\CheckSum.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\common_macro.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\ConfigurationBzl.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\Encoding.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\FileUtility.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\lupdate_macro.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\lupdatecom.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\ParseConfig.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\ProxyConnect.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\StringUtility.h">
+      <Filter>头文件\clientcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\utility\base64.h">
+      <Filter>头文件\clientcom\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clientcom\utility\md5.h">
+      <Filter>头文件\clientcom\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\BinaryLogger.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\BtnST.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\DialogCode.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\DirectoryChanges.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\DirectoryHandler.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\DiskUtility.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\FileDisk.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\FolderDialog.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\InstallService.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\LoadDriver.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\Logger.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\Markup.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\memory_utility.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\SystemCall.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\third_party.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\tiny_map.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\tiny_map64.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third party\TrayIcon.h">
+      <Filter>头文件\third party</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\liveupda.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="liveupda.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\liveupda.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SyncServ Version="1.2.1">
+    <ServConfig>
+        <User Group="nobody">nobody</User>
+        <Address>10.0.0.103</Address>
+        <MaxConnecting>512</MaxConnecting>
+        <TimeOut>120</TimeOut>
+        <SessionTimeOut>180</SessionTimeOut>
+        <LockFile>Default</LockFile>
+        <PidFile>Default</PidFile>
+        <Anchor Index="Default" Data="Default"/>
+    </ServConfig>
+    <ServeDB>
+        <Address Port="3306">127.0.0.1</Address>
+        <DBName>AuthDB</DBName>
+        <User Name="root" Password="root"/>
+        <Ping CacheAddr="127.0.0.1" Port="0x00"/>
+    </ServeDB>
+    <BackupCtrl>
+        <MaxModify IntervTime="600">16</MaxModify>
+        <MaxDelete IntervTime="300">128</MaxDelete>
+    </BackupCtrl>
+    <LogConfig>
+        <RuntimeLog DebugLevel="MAX">Default</RuntimeLog>
+        <AccessLog>Default</AccessLog>
+    </LogConfig>	
+</SyncServ>
+
+

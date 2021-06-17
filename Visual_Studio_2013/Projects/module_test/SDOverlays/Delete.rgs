@@ -1,0 +1,51 @@
+HKCR
+{
+	SDOverlays.Delete.1 = s 'Delete Class'
+	{
+		CLSID = s '{B2B24E46-DAE4-4379-8B96-910D0134F9E8}'
+	}
+	SDOverlays.Delete = s 'Delete Class'
+	{
+		CLSID = s '{B2B24E46-DAE4-4379-8B96-910D0134F9E8}'
+		CurVer = s 'SDOverlays.Delete.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {B2B24E46-DAE4-4379-8B96-910D0134F9E8} = s 'Delete Class'
+		{
+			ProgID = s 'SDOverlays.Delete.1'
+			VersionIndependentProgID = s 'SDOverlays.Delete'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{BCC64F53-8186-4EEE-93D2-DD7C371188B2}'
+		}
+	}
+}
+
+HKLM
+{
+  NoRemove SOFTWARE
+  {
+    NoRemove Microsoft
+    {
+      NoRemove Windows
+      {
+        NoRemove CurrentVersion
+        {
+          NoRemove Explorer
+          {
+            NoRemove ShellIconOverlayIdentifiers
+            {
+              ForceRemove 00SD_Delete = s '{B2B24E46-DAE4-4379-8B96-910D0134F9E8}'
+              {
+              }           
+            }
+          }
+        }
+      }
+    }
+  }
+}

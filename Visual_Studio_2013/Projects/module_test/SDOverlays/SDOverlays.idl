@@ -1,0 +1,180 @@
+// SDOverlays.idl : SDOverlays 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(SDOverlays.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(649C00F1-0378-4B81-8A64-ABEAF2A8FF0C),
+	dual,
+	nonextensible,
+	helpstring("IAdded 接口"),
+	pointer_default(unique)
+]
+interface IAdded : IDispatch{
+};
+[
+	object,
+	uuid(81F878CE-B076-4E3D-98B0-04C9A8DA664B),
+	dual,
+	nonextensible,
+	helpstring("IConflict 接口"),
+	pointer_default(unique)
+]
+interface IConflict : IDispatch{
+};
+[
+	object,
+	uuid(2A9268FD-9373-4B2D-8FBC-F03B153359E4),
+	dual,
+	nonextensible,
+	helpstring("IDelete 接口"),
+	pointer_default(unique)
+]
+interface IDelete : IDispatch{
+};
+[
+	object,
+	uuid(24F30812-C717-4E32-8D3F-85BAC9B141B0),
+	dual,
+	nonextensible,
+	helpstring("IForbid 接口"),
+	pointer_default(unique)
+]
+interface IForbid : IDispatch{
+};
+[
+	object,
+	uuid(D87636DE-4359-43FE-B547-AA9388138400),
+	dual,
+	nonextensible,
+	helpstring("ILocked 接口"),
+	pointer_default(unique)
+]
+interface ILocked : IDispatch{
+};
+[
+	object,
+	uuid(FD6DE6B7-3145-42E0-8FC6-313D8ED9F5D4),
+	dual,
+	nonextensible,
+	helpstring("IModified 接口"),
+	pointer_default(unique)
+]
+interface IModified : IDispatch{
+};
+[
+	object,
+	uuid(F68E9050-9025-4B5C-9D95-EAF4FCF81DB7),
+	dual,
+	nonextensible,
+	helpstring("INormal 接口"),
+	pointer_default(unique)
+]
+interface INormal : IDispatch{
+};
+[
+	object,
+	uuid(856076A6-B919-4754-AB2D-97BA21B1769D),
+	dual,
+	nonextensible,
+	helpstring("IReadOnly 接口"),
+	pointer_default(unique)
+]
+interface IReadOnly : IDispatch{
+};
+[
+	object,
+	uuid(F3FF495F-1AB0-4A4B-9480-698542C5BDB2),
+	dual,
+	nonextensible,
+	helpstring("ISyncing 接口"),
+	pointer_default(unique)
+]
+interface ISyncing : IDispatch{
+};
+[
+	uuid(BCC64F53-8186-4EEE-93D2-DD7C371188B2),
+	version(1.0),
+	helpstring("SDOverlays 1.0 类型库")
+]
+library SDOverlaysLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(37E3FAA5-C656-471E-B0D9-065D50FD0A10),
+		helpstring("Added Class")
+	]
+	coclass Added
+	{
+		[default] interface IAdded;
+	};
+	[
+		uuid(B0128151-D09A-44D6-9585-E6EC694DFE53),
+		helpstring("Conflict Class")
+	]
+	coclass Conflict
+	{
+		[default] interface IConflict;
+	};
+	[
+		uuid(B2B24E46-DAE4-4379-8B96-910D0134F9E8),
+		helpstring("Delete Class")
+	]
+	coclass Delete
+	{
+		[default] interface IDelete;
+	};
+	[
+		uuid(C7F27E92-CB43-4A23-B019-CE13DE2227FC),
+		helpstring("Forbid Class")
+	]
+	coclass Forbid
+	{
+		[default] interface IForbid;
+	};
+	[
+		uuid(69C22DEA-70D5-42BC-8F8F-369F14701891),
+		helpstring("Locked Class")
+	]
+	coclass Locked
+	{
+		[default] interface ILocked;
+	};
+	[
+		uuid(AD8CC79D-9F8B-478B-8C4D-4332EE64CB46),
+		helpstring("Modified Class")
+	]
+	coclass Modified
+	{
+		[default] interface IModified;
+	};
+	[
+		uuid(1A910B09-7B75-4BAD-9600-28649F2CF9F7),
+		helpstring("Normal Class")
+	]
+	coclass Normal
+	{
+		[default] interface INormal;
+	};
+	[
+		uuid(0A97FBBB-10B7-4EF9-8E9C-E0076153B76E),
+		helpstring("ReadOnly Class")
+	]
+	coclass ReadOnly
+	{
+		[default] interface IReadOnly;
+	};
+	[
+		uuid(0EF9A413-9E51-47A9-8E37-07221B57EB6B),
+		helpstring("Syncing Class")
+	]
+	coclass Syncing
+	{
+		[default] interface ISyncing;
+	};
+};

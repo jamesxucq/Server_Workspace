@@ -1,0 +1,529 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\sdclient.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\sdclient.ico"
+IDI_SYNCOK              ICON                    "res\\syncok.ico"
+IDI_FIRST_SYNCING       ICON                    "res\\syncing_first.ico"
+IDI_SECOND_SYNCING      ICON                    "res\\syncing_second.ico"
+IDI_NORMAL              ICON                    "res\\normal.ico"
+IDI_PAUSED              ICON                    "res\\paused.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CLIENT_DLG DIALOGEX 0, 0, 180, 50
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+END
+
+IDD_ABOUT_PAGE_DLG DIALOGEX 0, 0, 270, 128
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "同步网盘客户端",IDC_STATIC,99,16,57,8
+    LTEXT           "西联数据有限公司",IDC_STATIC,173,80,65,8
+    LTEXT           "联系方式",IDC_STATIC,173,92,33,8
+    GROUPBOX        "",IDC_STATIC,10,6,250,112
+    CONTROL         "<a>www.seko.com</a>",IDC_APP_UPDATE_SYSLINK,"SysLink",WS_TABSTOP,173,104,64,10
+END
+
+IDD_ACCOUNT_PAGE_DLG DIALOGEX 0, 0, 270, 128
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "断开连接",IDC_UNLINK_BTN,190,24,50,14
+    LTEXT           "用户帐户: drew@gmail.con",IDC_UNAME_STC,30,26,97,12
+    GROUPBOX        "同步网盘连接到 (Drew`s Laptop)",IDC_PCNAME_STC,10,6,250,44
+END
+
+IDD_BANDWIDTH_PAGE_DLG DIALOGEX 0, 0, 270, 128
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "不限制下载速度",IDC_DOWNLIMIT_RDO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,26,18,72,10
+    CONTROL         "下载速度限制为:",IDC_DOWNRATE_RDO,"Button",BS_AUTORADIOBUTTON,26,31,75,10
+    EDITTEXT        IDC_DOWNRATE_EDT,190,29,40,12,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "不限制上传速度",IDC_UPLOADLIMIT_RDO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,26,62,72,10
+    CONTROL         "自动限制上传速度",IDC_UPLOADAUTO_RDO,"Button",BS_AUTORADIOBUTTON,26,74,80,10
+    CONTROL         "上传速度限制为:",IDC_UPLOADRATE_RDO,"Button",BS_AUTORADIOBUTTON,26,86,75,10
+    EDITTEXT        IDC_UPLOADRATE_EDT,190,82,40,12,ES_AUTOHSCROLL
+    GROUPBOX        "下载",IDC_STATIC,10,6,250,40
+    GROUPBOX        "上传",IDC_STATIC,10,51,250,52
+    LTEXT           "kB/s",IDC_STATIC,235,31,14,8
+    LTEXT           "kB/s",IDC_STATIC,235,85,14,8
+END
+
+IDD_GENERAL_PAGE_DLG DIALOGEX 0, 0, 270, 128
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_DRIVE_CBO,46,23,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "重新挂载",IDC_REMOUNT_BTN,190,21,50,14
+    CONTROL         "显示系统提示信息",IDC_SYSMSG_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,63,80,10
+    CONTROL         "开机后自动运行",IDC_AUTORUN_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,77,72,10
+    GROUPBOX        "",IDC_STATIC,10,51,250,65
+    LTEXT           "盘符:",IDC_STATIC,20,26,20,8
+    GROUPBOX        "选择挂载数据的盘符",IDC_STATIC,10,6,250,40
+    CONTROL         "软件自动更新",IDC_AUTOUPDATE_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,91,64,10
+END
+
+IDD_OPTIONS_DLG DIALOGEX 0, 0, 231, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Options"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "确定",IDC_OK_BTN,93,160,40,14
+    PUSHBUTTON      "取消",IDC_CANCEL_BTN,138,160,40,14
+    PUSHBUTTON      "应用",IDC_APPLY_BTN,183,160,40,14
+    LTEXT           "",IDC_CHILDREN_POS,0,35,230,125,NOT WS_VISIBLE
+    LTEXT           "",IDC_BUTTON_POS,0,0,230,35,NOT WS_VISIBLE
+END
+
+IDD_PROXIES_PAGE_DLG DIALOGEX 0, 0, 270, 128
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "不设置代理",IDC_NOPROXY_RDO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,15,16,56,10
+    CONTROL         "自动设置代理",IDC_AUTOPROXY_RDO,"Button",BS_AUTORADIOBUTTON,15,27,64,10
+    CONTROL         "手动设置代理",IDC_MANUALPROXY_RDO,"Button",BS_AUTORADIOBUTTON,15,39,64,10
+    COMBOBOX        IDC_TYPE_CBO,53,52,48,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    EDITTEXT        IDC_SERV_EDT,53,70,100,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PORT_EDT,185,70,60,14,ES_AUTOHSCROLL
+    CONTROL         "设置代理用户密码",IDC_AUTH_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,54,88,80,10
+    EDITTEXT        IDC_PROXY_UNAME_EDT,53,101,60,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROXY_PASSWD_EDT,146,101,60,14,ES_PASSWORD | ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,10,6,250,116
+    RTEXT           "代理方式:",IDC_TYPE_STC,15,54,36,8
+    RTEXT           "服务器:",IDC_SERV_STC,23,73,28,8
+    RTEXT           "用户名:",IDC_UNAME_STC,24,102,28,8
+    RTEXT           "密码:",IDC_PASSWD_STC,124,103,20,8
+    LTEXT           "端口:",IDC_PORT_STC,165,73,20,8
+END
+
+IDD_BUTTON_DLG DIALOGEX 0, 0, 318, 35
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "General",IDC_GENERAL_BTN,"Button",BS_OWNERDRAW | BS_FLAT | WS_TABSTOP,0,0,31,35
+    CONTROL         "Account",IDC_ACCOUNT_BTN,"Button",BS_OWNERDRAW | BS_FLAT | WS_TABSTOP,31,0,34,35
+    CONTROL         "Bandwidth",IDC_BANDWIDTH_BTN,"Button",BS_OWNERDRAW | BS_FLAT | WS_TABSTOP,65,0,41,35
+    CONTROL         "Proxies",IDC_PROXIES_BTN,"Button",BS_OWNERDRAW | BS_FLAT | WS_TABSTOP,106,0,29,35
+    CONTROL         "About",IDC_ABOUT_BTN,"Button",BS_OWNERDRAW | BS_FLAT | WS_TABSTOP,209,0,34,35
+    CONTROL         151,IDC_STATIC,"Static",SS_BITMAP,243,0,63,35
+    CONTROL         "Security",IDC_SECURITY_BTN,"Button",BS_OWNERDRAW | BS_FLAT | WS_TABSTOP,135,0,35,35
+    CONTROL         "Advanced",IDC_ADVANCED_BTN,"Button",BS_OWNERDRAW | BS_FLAT | WS_TABSTOP,170,0,39,35
+END
+
+IDD_ADD_PASSWD_DLG DIALOGEX 0, 0, 154, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置口令"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_NEWPWD_ADD_EDT,46,6,75,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_VALPWD_ADD_EDT,46,24,75,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,23,44,50,14
+    PUSHBUTTON      "取消",IDCANCEL,83,44,50,14
+    LTEXT           "新口令:",IDC_STATIC,16,10,28,8
+    LTEXT           "重复口令:",IDC_STATIC,7,28,36,8
+    LTEXT           "太简单",IDC_NEWPWD_ADD_STC,126,10,25,8
+    LTEXT           "不匹配",IDC_VALPWD_ADD_STC,126,27,25,8
+END
+
+IDD_CHG_PASSWD_DLG DIALOGEX 0, 0, 159, 81
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改口令"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_OLDPWD_CHG_EDT,46,5,81,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_NEWPWD_CHG_EDT,46,23,81,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_VALPWD_CHG_EDT,46,41,81,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,30,62,50,14
+    PUSHBUTTON      "取消",IDCANCEL,86,62,50,14
+    LTEXT           "原始口令:",IDC_STATIC,8,8,36,8
+    LTEXT           "新口令:",IDC_STATIC,15,26,28,8
+    LTEXT           "重复口令:",IDC_STATIC,7,44,36,8
+    LTEXT           "不匹配",IDC_VALPWD_CHG_STC,132,44,25,8
+    LTEXT           "错误！",IDC_OLDPWD_CHG_STC,132,8,25,8
+    LTEXT           "太简单",IDC_NEWPWD_CHG_STC,132,26,25,8
+END
+
+IDD_SECURITY_PAGE_DLG DIALOGEX 0, 0, 270, 128
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "<a>更改用户密码</a>",IDC_CHANGE_USERPWD_SYSLINK,"SysLink",WS_TABSTOP,20,37,118,14
+    CONTROL         "客户端口令",IDC_PASSWORD_CHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,72,56,10
+    PUSHBUTTON      "设置口令",IDC_CLIENT_PWD_BTN,190,72,50,13
+    LTEXT           "客户端口令是启动软件的本地密码",IDC_STATIC,20,60,129,8
+    LTEXT           "用户密码是登录系统的密码",IDC_STATIC,20,25,97,8
+    GROUPBOX        "安全设置",IDC_STATIC,10,6,250,95
+END
+
+IDD_VALIDATE_DLG DIALOGEX 0, 0, 190, 35
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "同步网盘"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_PASSWORD_EDT,40,10,81,15,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "登录",IDC_VALIDATE_BTN,138,10,42,15,WS_DISABLED
+    LTEXT           "口令:",IDC_STATIC,12,13,20,9
+END
+
+IDD_MOVE_USERSPACE_DLG DIALOGEX 0, 0, 215, 67
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "移动数据"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,95,43,50,14
+    PUSHBUTTON      "取消",IDCANCEL,153,43,50,14
+    LTEXT           "是否确定移动数据到新位置?",IDC_MOVE_STATUS_STC,10,7,155,29
+END
+
+IDD_ADVANCED_PAGE_DLG DIALOGEX 0, 0, 270, 128
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_LOCATION_EDT,20,24,137,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "移动...",IDC_MOVE_LOCATION_BTN,190,24,50,14
+    PUSHBUTTON      "选择同步",IDC_DIRE_SELECTION_BTN,190,65,50,14
+    GROUPBOX        "同步选择",IDC_STATIC,10,55,250,52
+    GROUPBOX        "用户文件目录",IDC_STATIC,10,6,250,43
+    LTEXT           "服务器那些目录需要同步到本地.",IDC_SELECTIVE_STC,30,69,119,8
+    LTEXT           "本地数据异常,强制保持数据一致.",IDC_FORCECTRL_STC,30,87,105,8
+    PUSHBUTTON      "修复数据",IDC_FORCECTRL_BTN,190,85,50,14
+END
+
+IDD_SELECTIVE_DLG DIALOGEX 0, 0, 209, 218
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "同步目录"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SELECTIVE_TREE,"SysTreeView32",TVS_HASBUTTONS | TVS_CHECKBOXES | WS_BORDER | WS_HSCROLL | WS_TABSTOP,7,16,195,172,WS_EX_TRANSPARENT
+    PUSHBUTTON      "高级模式",IDC_ADVANCE_MODE_BTN,7,197,56,14
+    DEFPUSHBUTTON   "确定",IDOK,96,197,50,14
+    PUSHBUTTON      "取消",IDCANCEL,152,197,50,14
+    LTEXT           "只有被选中的目录才会同步.",IDC_STATIC,7,3,100,8
+END
+
+IDD_DOWND_DIRES_DLG DIALOGEX 0, 0, 210, 41
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Tip"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "取消",IDCANCEL,149,13,50,14
+    CTEXT           "正在从服务器下载用户目录数据.\n请等待...",IDC_STATIC,7,7,121,19
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "西联数据"
+            VALUE "FileDescription", "Windows 客户端主程序"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "sdclient.exe"
+            VALUE "LegalCopyright", "(C) 西联数据 保留所有权利。"
+            VALUE "OriginalFilename", "sdclient.exe"
+            VALUE "ProductName", "同步网盘"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CLIENT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+
+    IDD_ACCOUNT_PAGE_DLG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_BANDWIDTH_PAGE_DLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 250
+        VERTGUIDE, 243
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_GENERAL_PAGE_DLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 250
+    END
+
+    IDD_OPTIONS_DLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 230
+    END
+
+    IDD_BUTTON_DLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 301
+        BOTTOMMARGIN, 34
+    END
+
+    IDD_CHG_PASSWD_DLG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_VALIDATE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 183
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 28
+    END
+
+    IDD_MOVE_USERSPACE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 60
+    END
+
+    IDD_ADVANCED_PAGE_DLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 250
+    END
+
+    IDD_SELECTIVE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 202
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_DOWND_DIRES_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 34
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_TRAYICON_MENU MENUEX 
+BEGIN
+    POPUP "托盘(&T)",                         65535,MFT_STRING | MFT_RIGHTJUSTIFY,MFS_ENABLED
+    BEGIN
+        MENUITEM "打开同步磁盘",                      ID_OPEN_ROOTDIR,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "连接服务器...",                    ID_PROCESS_STATUS,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "系统设置",                        ID_OPTIONS_OPEN,MFT_STRING,MFS_ENABLED
+        MENUITEM "帮助",                          ID_AGENG_HELP,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "退出程序",                        ID_APP_SUSPEND,MFT_STRING,MFS_ENABLED
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PROXIES_PAGE_DLG DLGINIT
+BEGIN
+    IDC_TYPE_CBO, 0x403, 5, 0
+0x5448, 0x5054, "\000" 
+    IDC_TYPE_CBO, 0x403, 7, 0
+0x4f53, 0x4b43, 0x3453, "\000" 
+    IDC_TYPE_CBO, 0x403, 7, 0
+0x4f53, 0x4b43, 0x3553, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_FACCOUNT            BITMAP                  "res\\bm_faccount.bmp"
+IDB_FBANDWIDTH          BITMAP                  "res\\bm_fbandwidth.bmp"
+IDB_FGENERAL            BITMAP                  "res\\bm_fgeneral.bmp"
+IDB_FPROXIES            BITMAP                  "res\\bm_fproxies.bmp"
+IDB_NACCOUNT            BITMAP                  "res\\bm_naccount.bmp"
+IDB_NBANDWIDTH          BITMAP                  "res\\bm_nbandwidth.bmp"
+IDB_NGENERAL            BITMAP                  "res\\bm_ngeneral.bmp"
+IDB_NPROXIES            BITMAP                  "res\\bm_nproxies.bmp"
+IDB_FABOUT              BITMAP                  "res\\bm_fabout.bmp"
+IDB_NABOUT              BITMAP                  "res\\bm_nabout.bmp"
+IDB_PAUSED              BITMAP                  "res\\bm_paused.bmp"
+IDB_RUNING              BITMAP                  "res\\bm_running.bmp"
+IDB_CONNECT             BITMAP                  "res\\bm_connect.bmp"
+IDB_BACKGROUND          BITMAP                  "res\\bm_background.bmp"
+IDB_FSECURITY           BITMAP                  "res\\bm_fsecurity.bmp"
+IDB_NSECURITY           BITMAP                  "res\\bm_nsecurity.bmp"
+IDB_NADVANCED           BITMAP                  "res\\bm_nadvanced.bmp"
+IDB_FADVANCED           BITMAP                  "res\\bm_fadvanced.bmp"
+IDB_FOLDER_LIST         BITMAP                  "res\\bm_folderlist.bmp"
+IDB_CHECK_STATE         BITMAP                  "res\\bm_checkstate.bmp"
+IDB_SABOUT              BITMAP                  "res\\bm_sabout.bmp"
+IDB_SSECURITY           BITMAP                  "res\\bm_ssecurity.bmp"
+IDB_SACCOUNT            BITMAP                  "res\\bm_saccount.bmp"
+IDB_SADVANCED           BITMAP                  "res\\bm_sadvanced.bmp"
+IDB_SBANDWIDTH          BITMAP                  "res\\bm_sbandwidth.bmp"
+IDB_SGENERAL            BITMAP                  "res\\bm_sgeneral.bmp"
+IDB_SPROXIES            BITMAP                  "res\\bm_sproxies.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_CONNTCTING          "连接服务器..."
+    IDS_CONNTCTED           "已连接服务器"
+    IDS_PAUSED              "暂停同步"
+    IDS_START               "开始同步"
+    IDS_BALLOONTIP          "同步网盘"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\sdclient.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

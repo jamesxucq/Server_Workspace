@@ -1,0 +1,1 @@
+-Wall -Wno-parentheses -Wno-unused-variable -Wunused-but-set-variable
